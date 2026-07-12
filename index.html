@@ -2,188 +2,28 @@ index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRAA Music</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, sans-serif;
-        }
+  <title>IRAA AI</title>
 
-        body{
-            background:#000;
-            color:#fff;
-        }
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css">
 
-        header{
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-            padding:20px;
-            background:#111;
-            position:sticky;
-            top:0;
-        }
+  <!-- Google Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        .logo{
-            font-size:28px;
-            font-weight:bold;
-            color:#00e5ff;
-        }
-
-        .wallet{
-            background:#00e5ff;
-            color:#000;
-            padding:8px 15px;
-            border-radius:20px;
-            font-weight:bold;
-        }
-
-        .hero{
-            padding:30px 20px;
-        }
-
-        .hero h1{
-            font-size:34px;
-            margin-bottom:10px;
-        }
-
-        .hero p{
-            color:#bbb;
-            margin-bottom:20px;
-        }
-
-        .search{
-            width:100%;
-            padding:15px;
-            border:none;
-            border-radius:12px;
-            font-size:16px;
-        }
-    </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">🎵 IRAA</div>
-    <div class="wallet">🪙 50 Coins</div>
-</header>
+  <!-- App Root -->
+  <div id="app">
 
-<section class="hero">
-    <h1>Welcome to IRAA</h1>
-    <p>Create AI Music, Listen Songs & Explore Unlimited Entertainment.</p>
+  </div>
 
-<input
-    type="text"
-    class="search"
-    placeholder="Search songs, artists, albums...">
+  <!-- Main Script -->
+  <script src="script.js"></script>
 
-</section>
-<!-- Premium Card -->
-<section style="padding:20px;">
-    <div style="background:linear-gradient(135deg,#00e5ff,#0066ff);padding:20px;border-radius:18px;">
-        <h2>👑 IRAA Premium</h2>
-        <p>Unlimited AI Music • HD Audio • No Ads</p>
-
-        <button style="margin-top:15px;padding:10px 20px;border:none;border-radius:20px;font-weight:bold;">
-            Upgrade Now
-        </button>
-    </div>
-</section>
-
-<!-- Quick Actions -->
-<section style="padding:20px;">
-    <h2>⚡ Quick Actions</h2>
-
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:15px;">
-        <div style="background:#111;padding:20px;border-radius:15px;text-align:center;">🎵<br>AI Music</div>
-        <div style="background:#111;padding:20px;border-radius:15px;text-align:center;">🎤<br>Voice Clone</div>
-        <div style="background:#111;padding:20px;border-radius:15px;text-align:center;">✍️<br>Lyrics AI</div>
-        <div style="background:#111;padding:20px;border-radius:15px;text-align:center;">☁️<br>Upload Song</div>
-    </div>
-</section>
-<!-- Trending Songs -->
-<section style="padding:20px;">
-    <h2>🔥 Trending Songs</h2>
-
-    <div style="background:#111;padding:15px;border-radius:12px;margin-top:15px;">
-        🎵 Andala Aparanji Bomma
-    </div>
-
-    <div style="background:#111;padding:15px;border-radius:12px;margin-top:10px;">
-        ❤️ Saveri
-    </div>
-
-    <div style="background:#111;padding:15px;border-radius:12px;margin-top:10px;">
-        🎶 Banjara Love Song
-    </div>
-
-    <div style="background:#111;padding:15px;border-radius:12px;margin-top:10px;">
-        🎧 Trending Mix 2026
-    </div>
-</section><!-- New Releases -->
-<section style="padding:20px;">
-    <h2>🆕 New Releases</h2>
-
-    <div style="background:#111;padding:15px;border-radius:12px;margin-top:15px;">
-        🎼 Love Melody 2026
-    </div>
-
-    <div style="background:#111;padding:15px;border-radius:12px;margin-top:10px;">
-        🎤 Folk Beats
-    </div>
-
-    <div style="background:#111;padding:15px;border-radius:12px;margin-top:10px;">
-        🎵 Romantic Hits
-    </div>
-
-    <div style="background:#111;padding:15px;border-radius:12px;margin-top:10px;">
-        🎶 Devotional Collection
-    </div>
-</section>
-<!-- AI Music Tools -->
-<section style="padding:20px;">
-    <h2>🤖 AI Music Tools</h2>
-
-    <div style="background:#111;padding:15px;border-radius:12px;margin-top:15px;">
-        🎼 AI Song Generator
-    </div>
-
-    <div style="background:#111;padding:15px;border-radius:12px;margin-top:10px;">
-        ✍️ AI Lyrics Generator
-    </div>
-
-    <div style="background:#111;padding:15px;border-radius:12px;margin-top:10px;">
-        🎤 AI Voice Clone
-    </div>
-
-    <div style="background:#111;padding:15px;border-radius:12px;margin-top:10px;">
-        🎧 AI Music Mastering
-    </div>
-</section>
-<!-- Bottom Navigation -->
-<nav style="
-position:fixed;
-bottom:0;
-left:0;
-width:100%;
-background:#111;
-display:flex;
-justify-content:space-around;
-padding:15px 0;
-border-top:1px solid #333;">
-
-<div>🏠<br>Home</div>
-<div>🔍<br>Search</div>
-<div>➕<br>Create</div>
-<div>🎵<br>Library</div>
-<div>👤<br>Profile</div>
-
-</nav>
 </body>
 </html>
