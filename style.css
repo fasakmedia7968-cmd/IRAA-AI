@@ -34,3 +34,68 @@ body{
   margin:auto;
   min-height:100vh;
 }
+
+/* ===========================
+   IRAA TOP BAR
+=========================== */
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 20px;
+    background:#0d0d0d;
+    position:sticky;
+    top:0;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#8B5CF6,#22D3EE);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    color:#fff;
+}
+
+.brand-name{
+    font-size:22px;
+    font-weight:700;
+}
+
+.top-actions{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.coin{
+    background:#181818;
+    padding:8px 12px;
+    border-radius:30px;
+    font-size:13px;
+}
+
+.notification{
+    position:relative;
+    font-size:22px;
+}
+
+.dot{
+    position:absolute;
+    top:2px;
+    right:0;
+    width:8px;
+    height:8px;
+    background:red;
+    border-radius:50%;
+}
