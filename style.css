@@ -1,1 +1,36 @@
-/* IRAA AI V1 Styles */
+/* ===========================
+   IRAA AI V1 - Theme System
+=========================== */
+
+:root{
+  --bg:#050505;
+  --card:#111111;
+  --text:#ffffff;
+  --text-secondary:#bdbdbd;
+
+  --purple:#8B5CF6;
+  --pink:#FF4FD8;
+  --cyan:#22D3EE;
+
+  --radius:20px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:Arial, Helvetica, sans-serif;
+  min-height:100vh;
+}
+
+#app{
+  width:100%;
+  max-width:480px;
+  margin:auto;
+  min-height:100vh;
+}
