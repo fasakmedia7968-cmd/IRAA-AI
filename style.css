@@ -206,3 +206,40 @@ body::before{
 
     background:linear-gradient(90deg,#7b2cff,#00d4ff);
 }
+/* =========================
+   AI Tools
+========================= */
+
+.tools-section{
+    padding:20px;
+}
+
+.tools-section h2{
+    color:#ffffff;
+    font-size:22px;
+    margin-bottom:16px;
+}
+
+.tools-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+}
+
+.tool-card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:22px;
+    padding:22px 10px;
+    text-align:center;
+    color:#ffffff;
+    font-size:15px;
+    line-height:1.8;
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 0 15px rgba(138,43,226,.18),
+    0 0 8px rgba(0,229,255,.12);
+}
