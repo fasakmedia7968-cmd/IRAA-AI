@@ -508,3 +508,68 @@ body::after{
     align-items:center;
     gap:14px;
 }
+/* =========================
+   3D Glass Top Actions
+========================= */
+
+.reward,
+.wallet,
+.notification{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-width:34px;
+    height:34px;
+    padding:0 12px;
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:18px;
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    color:#fff;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,.25),
+        inset 0 1px 1px rgba(255,255,255,.15);
+
+    position:relative;
+}
+
+.reward{
+    width:34px;
+    padding:0;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.reward:hover{
+    transform:translateY(-2px);
+}
+
+.wallet span{
+    margin-left:4px;
+    font-weight:600;
+}
+
+.notification{
+    width:34px;
+    padding:0;
+    cursor:pointer;
+}
+
+.dot{
+    position:absolute;
+    top:6px;
+    right:6px;
+
+    width:7px;
+    height:7px;
+
+    background:#ff3b30;
+    border-radius:50%;
+
+    box-shadow:0 0 10px #ff3b30;
+}
