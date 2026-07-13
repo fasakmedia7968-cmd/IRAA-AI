@@ -41,3 +41,25 @@ body::before{
     rgba(255,45,170,.20),transparent 40%);
     z-index:-1;
 }
+/* =========================
+   IRAA Logo
+========================= */
+
+.logo{
+    width:48px;
+    height:48px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.brand{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.brand-name{
+    font-size:22px;
+    font-weight:700;
+    color:#ffffff;
+}
