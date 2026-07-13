@@ -101,3 +101,22 @@ body::before{
     padding:8px 12px;
     color:#fff;
 }
+/* =========================
+   Welcome Section
+========================= */
+
+.welcome{
+    padding:30px 20px 15px;
+}
+
+.welcome h1{
+    font-size:30px;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.welcome p{
+    font-size:15px;
+    color:#bdbdbd;
+    line-height:1.6;
+}
