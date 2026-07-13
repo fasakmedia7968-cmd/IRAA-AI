@@ -41,6 +41,36 @@ body::before{
     rgba(255,45,170,.20),transparent 40%);
     z-index:-1;
 }
+/* Animated Background */
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+        radial-gradient(circle,
+        rgba(138,43,226,.12) 0%,
+        transparent 60%);
+    filter:blur(80px);
+    animation:backgroundFloat 12s ease-in-out infinite;
+    z-index:-2;
+}
+
+@keyframes backgroundFloat{
+
+    0%{
+        transform:translate(-10%,-10%) scale(1);
+    }
+
+    50%{
+        transform:translate(10%,8%) scale(1.2);
+    }
+
+    100%{
+        transform:translate(-10%,-10%) scale(1);
+    }
+
+}
 /* =========================
    IRAA Logo
 ========================= */
