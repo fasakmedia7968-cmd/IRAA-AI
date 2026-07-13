@@ -416,3 +416,59 @@ body::after{
 .creator-item small{
     font-size:11px;
 }
+/* =========================
+   Reward • Wallet • Notification
+========================= */
+
+.reward,
+.wallet,
+.notification{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:32px;
+    padding:0 10px;
+    border-radius:18px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    color:#fff;
+    position:relative;
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+}
+
+.reward{
+    width:32px;
+    padding:0;
+    animation:rewardFloat 2.5s ease-in-out infinite;
+}
+
+.wallet span{
+    margin-left:4px;
+    font-weight:600;
+}
+
+.notification{
+    width:32px;
+    padding:0;
+}
+
+.dot{
+    position:absolute;
+    top:4px;
+    right:4px;
+    width:7px;
+    height:7px;
+    background:#ff3b30;
+    border-radius:50%;
+    box-shadow:0 0 8px #ff3b30;
+}
+
+@keyframes rewardFloat{
+    0%,100%{
+        transform:rotate(0deg);
+    }
+    50%{
+        transform:rotate(10deg);
+    }
+}
