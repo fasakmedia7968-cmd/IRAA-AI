@@ -243,3 +243,40 @@ body::before{
     0 0 15px rgba(138,43,226,.18),
     0 0 8px rgba(0,229,255,.12);
 }
+/* =========================
+   Trending Section
+========================= */
+
+.trending-section{
+    padding:20px;
+}
+
+.trending-section h2{
+    color:#ffffff;
+    font-size:22px;
+    margin-bottom:16px;
+}
+
+.trending-card{
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:24px;
+    padding:20px;
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 0 20px rgba(138,43,226,.18),
+    0 0 10px rgba(0,229,255,.12);
+}
+
+.trending-card h3{
+    color:#ffffff;
+    margin-bottom:10px;
+}
+
+.trending-card p{
+    color:#cfcfcf;
+    line-height:1.6;
+}
