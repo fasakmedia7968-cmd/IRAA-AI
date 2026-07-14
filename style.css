@@ -492,19 +492,6 @@ padding:16px;
    IRAA TOP BAR
 ========================= */
 
-.top-bar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:14px 18px;
-}
-
-.brand{
-    display:flex;
-    align-items:center;
-    gap:10px;
-}
-
 .logo{
     height:34px;
     width:auto;
