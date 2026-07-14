@@ -724,10 +724,21 @@ padding:16px;
 }
 
 .tool-card:hover{
-    transform:translateY(-4px);
+    transform:translateY(-4px) scale(1.03);
+
+    box-shadow:
+        0 0 24px rgba(138,43,226,.35),
+        0 0 18px rgba(0,229,255,.25);
 }
 
-.tool-card br{
-    display:block;
-    margin-bottom:6px;
+.tool-card .material-icons{
+    font-size:30px;
+    color:#ffffff;
+    margin-bottom:8px;
+}
+
+.tool-card small{
+    font-size:13px;
+    font-weight:600;
+    color:#ffffff;
 }
