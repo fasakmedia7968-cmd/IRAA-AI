@@ -162,7 +162,9 @@ body::after{
 /* =========================
    Search Bar
 ========================= */
-
+.search-box{
+    padding:15px 18px;
+}
 .search-container{
     display:flex;
     align-items:center;
