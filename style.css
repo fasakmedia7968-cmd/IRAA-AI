@@ -693,8 +693,8 @@ padding:16px;
 }
 
 .tool-card{
-    min-width:120px;
-    height:90px;
+    min-width:130px;
+    height:96px;
 
     display:flex;
     flex-direction:column;
@@ -702,6 +702,8 @@ padding:16px;
     align-items:center;
 
     flex-shrink:0;
+
+    text-align:center;
 
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.12);
@@ -723,4 +725,9 @@ padding:16px;
 
 .tool-card:hover{
     transform:translateY(-4px);
+}
+
+.tool-card br{
+    display:block;
+    margin-bottom:6px;
 }
