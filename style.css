@@ -585,81 +585,215 @@ gap:8px;
 ========================= */
 
 .premium-card{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    padding:14px 18px;
+}
 
-    margin:14px;
-    padding:16px;
+.premium-content{
+    position:relative;
+    overflow:hidden;
+
+    padding:18px;
+    border-radius:22px;
 
     background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.12);
-    border-radius:22px;
+    border:1px solid rgba(255,255,255,.15);
 
     backdrop-filter:blur(20px);
     -webkit-backdrop-filter:blur(20px);
 
     box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.18),
-        0 8px 22px rgba(138,43,226,.18),
+        inset 0 1px 1px rgba(255,255,255,.30),
+        inset 0 -1px 1px rgba(255,255,255,.08),
+        0 10px 28px rgba(138,43,226,.20),
         0 4px 14px rgba(0,229,255,.12);
+
+    transition:.35s ease;
 }
 
-.premium-left{
+.premium-content:hover{
+    transform:translateY(-2px);
+}
+
+/* Glass Reflection */
+
+.premium-content::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:42%;
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.25),
+        rgba(255,255,255,.08),
+        transparent
+    );
+
+    pointer-events:none;
+}
+
+.premium-content::after{
+    content:"";
+    position:absolute;
+    bottom:-35px;
+    left:50%;
+    transform:translateX(-50%);
+    width:85%;
+    height:70px;
+
+    background:rgba(255,255,255,.05);
+    filter:blur(35px);
+
+    pointer-events:none;
+}
+
+/* Header */
+
+.premium-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.premium-title{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:8px;
 }
 
-.premium-coins{
-    font-size:34px;
-    filter:drop-shadow(0 0 8px rgba(255,215,0,.45));
+.crown{
+    font-size:28px;
+
+    filter:
+        drop-shadow(0 0 10px #FFD54A)
+        drop-shadow(0 0 20px rgba(255,215,0,.45));
 }
 
-.premium-text h3{
-    margin:0;
+.premium-title h3{
     color:#fff;
-    font-size:17px;
+    font-size:18px;
     font-weight:700;
 }
 
-.premium-text p{
-    margin:4px 0;
-    color:#ddd;
-    font-size:13px;
-}
+/* Subtitle */
 
-.premium-text span{
-    display:block;
-    margin-top:2px;
-    color:#9fdcff;
-    font-size:12px;
-}
-
-.upgrade-btn{
+.premium-sub{
     margin-top:10px;
-    width:90px;
-    height:32px;
+
+    color:rgba(255,255,255,.82);
+
+    font-size:13px;
+    font-weight:500;
+}
+
+/* Upgrade */
+
+.premium-btn{
+
+    margin-top:14px;
+
+    width:92px;
+    height:34px;
 
     border:none;
-    border-radius:16px;
-    cursor:pointer;
+    border-radius:18px;
+
+    background:linear-gradient(
+        135deg,
+        #8A2BE2,
+        #00E5FF
+    );
 
     color:#fff;
     font-size:13px;
     font-weight:600;
 
-    background:linear-gradient(135deg,#8A2BE2,#00E5FF);
+    cursor:pointer;
 
     box-shadow:
-        0 4px 12px rgba(138,43,226,.25),
+        0 5px 14px rgba(138,43,226,.28),
         inset 0 1px 1px rgba(255,255,255,.18);
+
+    transition:.3s ease;
 }
 
-.premium-right{
-    font-size:42px;
+.premium-btn:hover{
+    transform:translateY(-2px);
+}
+
+/* Diamond */
+
+.diamond-wrap{
+    position:relative;
+}
+
+.diamond{
+
+    font-size:40px;
 
     filter:
-        drop-shadow(0 0 12px rgba(0,229,255,.45))
-        drop-shadow(0 0 8px rgba(138,43,226,.35));
+        drop-shadow(0 0 12px #00E5FF)
+        drop-shadow(0 0 22px rgba(0,229,255,.55));
+
+    animation:diamondFloat 3s ease-in-out infinite;
+}
+
+/* Sparkles */
+
+.spark{
+    position:absolute;
+
+    width:5px;
+    height:5px;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    box-shadow:0 0 8px #00E5FF;
+
+    animation:spark 2.5s infinite;
+}
+
+.s1{
+    top:-6px;
+    right:2px;
+}
+
+.s2{
+    bottom:8px;
+    left:-8px;
+    animation-delay:.6s;
+}
+
+.s3{
+    right:-6px;
+    bottom:-3px;
+    animation-delay:1.2s;
+}
+
+@keyframes diamondFloat{
+
+    0%,100%{
+        transform:translateY(0);
     }
+
+    50%{
+        transform:translateY(-4px);
+    }
+}
+
+@keyframes spark{
+
+    0%,100%{
+        transform:scale(.7);
+        opacity:.3;
+    }
+
+    50%{
+        transform:scale(1.4);
+        opacity:1;
+    }
+}
