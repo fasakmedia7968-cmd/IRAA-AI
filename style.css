@@ -75,14 +75,14 @@ body::after{
    IRAA Logo
 ========================= */
 
-   .logo{
+.logo{
     height:28px;
     width:auto;
     object-fit:contain;
 
     filter:
         drop-shadow(0 0 6px rgba(138,43,226,.35))
-        drop-shadow(0 0 5px rgba(0,229,255,.22));
+        drop-shadow(0 0 6px rgba(0,229,255,.25));
 
     transition:0.3s ease;
 }
@@ -90,6 +90,30 @@ body::after{
 .logo:hover{
     transform:scale(1.02);
 }
+
+/* =========================
+   IRAA Assistant Icon
+========================= */
+
+.assistant-icon{
+    width:24px;
+    height:24px;
+    object-fit:contain;
+
+    filter:
+        drop-shadow(0 0 6px rgba(138,43,226,.45))
+        drop-shadow(0 0 6px rgba(0,229,255,.30));
+
+    transition:0.3s ease;
+}
+
+.assistant-icon:hover{
+    transform:scale(1.05);
+}
+
+/* =========================
+   Brand
+========================= */
 
 .brand{
     display:flex;
@@ -171,8 +195,8 @@ border-radius:12px;
 /* =========================
    Search Bar
 ========================= */
-.search-box{
-    padding:12px 14px 14px;
+.search-box{ 
+    padding:12px 18px;  
 }
 .search-container{
     display:flex;
@@ -193,25 +217,58 @@ gap:8px;
         inset 0 1px 1px rgba(255,255,255,.15);
 
     transition:all .3s ease;
-}
-.search-container input{
-    flex:1;
-    background:transparent;
-    border:none;
-    outline:none;
-    color:#ffffff;
-    font-size:13px;
-    font-family:'Outfit',sans-serif;
-}
+} 
 
-.search-container input::placeholder{
-    color:rgba(255,255,255,.65);
-}
+.search-container{
 
-.search-container .material-icons{
-    font-size:18px;
-    color:#ffffff;
-    cursor:pointer;
+    display:flex;
+    align-items:center;
+
+    height:42px;
+
+    padding:0 14px;
+
+    gap:10px;
+
+    border-radius:22px;
+
+    position:relative;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.14);
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255,255,255,.25),
+        inset 0 -1px 1px rgba(255,255,255,.08),
+        0 8px 18px rgba(138,43,226,.18),
+        0 3px 10px rgba(0,229,255,.10);
+
+    overflow:hidden;
+}
+.search-container::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:0;
+
+width:100%;
+height:45%;
+
+background:linear-gradient(
+180deg,
+rgba(255,255,255,.18),
+transparent
+);
+
+pointer-events:none;
+
 }
 /* =========================
    AI Tools
