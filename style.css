@@ -90,7 +90,7 @@ body::after{
 .logo:hover{
     transform:scale(1.02);
 }
-}
+
 .brand{
     display:flex;
     align-items:center;
@@ -138,8 +138,8 @@ body::after{
 .top-actions{
     display:flex;
     align-items:center;
-    gap:8px;
-    margin-left:auto;
+    gap:6px;
+    margin-left:auto; 
 }
 .reward,
 .wallet,
@@ -149,10 +149,10 @@ body::after{
     justify-content:center;
     gap:4px;
 
-    min-width:30px;
-    height:30px;
-
-    padding:0 8px;
+    min-width:28px;
+height:28px;
+padding:0 7px;
+border-radius:12px;
 
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.10);
@@ -445,76 +445,10 @@ padding:16px;
    IRAA TOP BAR
 ========================= */
 
-.logo{
-    height:34px;
-    width:auto;
-    object-fit:contain;
-    filter:drop-shadow(0 0 8px rgba(138,43,226,.45));
-}
-
-.brand-name{
-    font-size:20px;
-    font-weight:700;
-    letter-spacing:1px;
-    color:#fff;
-}
-
-.top-actions{
-    display:flex;
-    align-items:center;
-    gap:14px;
-}
 /* =========================
    3D Glass Top Actions
 ========================= */
 
-.reward,
-.wallet,
-.notification{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    min-width:34px;
-    height:34px;
-    padding:0 12px;
-
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.12);
-    border-radius:18px;
-
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
-
-    color:#fff;
-
-    box-shadow:
-        0 4px 12px rgba(0,0,0,.25),
-        inset 0 1px 1px rgba(255,255,255,.15);
-
-    position:relative;
-}
-
-.reward{
-    width:34px;
-    padding:0;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.reward:hover{
-    transform:translateY(-2px);
-}
-
-.wallet span{
-    margin-left:4px;
-    font-weight:600;
-}
-
-.notification{
-    width:34px;
-    padding:0;
-    cursor:pointer;
-}
 /* Notification Red Dot */
 
 .dot{
