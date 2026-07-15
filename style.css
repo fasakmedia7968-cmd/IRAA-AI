@@ -75,18 +75,21 @@ body::after{
    IRAA Logo
 ========================= */
 
-.logo{
-    width:34px;
-    height:34px;
+   .logo{
+    height:28px;
+    width:auto;
     object-fit:contain;
+
     filter:
-        drop-shadow(0 0 8px rgba(138,43,226,.45))
-        drop-shadow(0 0 6px rgba(0,229,255,.25));
-    transition:.3s ease;
+        drop-shadow(0 0 6px rgba(138,43,226,.35))
+        drop-shadow(0 0 5px rgba(0,229,255,.22));
+
+    transition:0.3s ease;
 }
 
 .logo:hover{
-    transform:scale(1.05);
+    transform:scale(1.02);
+}
 }
 .brand{
     display:flex;
