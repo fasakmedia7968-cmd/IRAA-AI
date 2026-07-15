@@ -478,15 +478,16 @@ padding:16px;
     }
 }
 .assistant-icon{
-    width:32px;
-    height:32px;
+    width:26px;
+    height:26px;
+
     object-fit:contain;
-    border-radius:50%;
-    background:rgba(255,255,255,.08);
-    padding:4px;
-    box-shadow:
-        0 0 10px rgba(138,43,226,.35),
-        0 0 6px rgba(0,229,255,.25);
+    display:block;
+
+    filter:
+        drop-shadow(0 0 6px rgba(138,43,226,.35))
+        drop-shadow(0 0 6px rgba(0,229,255,.25));
+
     transition:.3s ease;
 }
 
