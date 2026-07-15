@@ -132,65 +132,157 @@ body::after{
     text-shadow:0 0 8px rgba(138,43,226,.35);
 }
 /* =========================
-   IRAA Top Bar
+   IRAA Premium Top Bar
 ========================= */
 
 .top-bar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-
-    height:52px;
-    padding:0 14px;
-
     position:sticky;
     top:0;
     z-index:1000;
 
-    background:rgba(255,255,255,.08);
-    backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 
-    border-bottom:1px solid rgba(255,255,255,.10);
+    height:56px;
+    margin:10px 12px 0;
+    padding:0 16px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.14);
+
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
+
+    overflow:hidden;
 
     box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.15),
-        0 6px 18px rgba(138,43,226,.12),
-        0 3px 10px rgba(0,229,255,.10); 
+        inset 0 1px 1px rgba(255,255,255,.28),
+        inset 0 -1px 1px rgba(255,255,255,.08),
+        0 8px 24px rgba(138,43,226,.18),
+        0 4px 12px rgba(0,229,255,.10);
+
+    transition:.3s ease;
 }
+
+/* Glass Reflection */
+
+.top-bar::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:45%;
+
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.20),
+        transparent
+    );
+
+    pointer-events:none;
+}
+
+/* Right Actions */
 
 .top-actions{
     display:flex;
     align-items:center;
-    gap:6px;
-    margin-left:auto; 
+    gap:10px;
+    margin-left:auto;
 }
+
+/* Glass Buttons */
+
 .reward,
 .wallet,
 .notification{
+    position:relative;
+
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:4px;
 
-    min-width:28px;
-height:28px;
-padding:0 7px;
-border-radius:12px;
+    min-width:36px;
+    height:36px;
+    padding:0 10px;
+
+    border-radius:16px;
 
     background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.10);
-    border-radius:14px;
+    border:1px solid rgba(255,255,255,.12);
 
-    backdrop-filter:blur(18px);
-    -webkit-backdrop-filter:blur(18px);
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
 
     box-shadow:
-        0 3px 10px rgba(138,43,226,.12),
-        inset 0 1px 1px rgba(255,255,255,.12);
+        inset 0 1px 1px rgba(255,255,255,.18),
+        0 4px 12px rgba(138,43,226,.15);
 
+    transition:.3s ease;
+}
+
+.reward:hover,
+.wallet:hover,
+.notification:hover{
+    transform:translateY(-2px);
+}
+
+/* Material Icons */
+
+.reward .material-icons,
+.wallet .material-icons,
+.notification .material-icons{
+    font-size:20px;
     color:#fff;
 
+    text-shadow:
+        0 0 8px rgba(138,43,226,.45),
+        0 0 8px rgba(0,229,255,.30);
+}
+
+/* Wallet Text */
+
+.wallet span{
+    margin-left:5px;
+    font-size:13px;
+    font-weight:600;
+    color:#fff;
+}
+
+/* Notification Dot */
+
+.dot{
+    position:absolute;
+    top:6px;
+    right:6px;
+
+    width:8px;
+    height:8px;
+
+    background:#ff3b30;
+    border-radius:50%;
+
+    box-shadow:
+        0 0 8px #ff3b30,
+        0 0 16px #ff3b30;
+
+    animation:dotPulse 1.5s infinite;
+}
+
+@keyframes dotPulse{
+    0%,100%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+    50%{
+        transform:scale(1.35);
+        opacity:.7;
+    }
 }
 /* =========================
    Search Bar
@@ -451,60 +543,7 @@ pointer-events:none;
 .creator-item small{
     font-size:11px;
 }
-/* =========================
-   IRAA TOP BAR
-========================= */
 
-/* =========================
-   3D Glass Top Actions
-========================= */
-
-/* Notification Red Dot */
-
-.dot{
-    position:absolute;
-    top:6px;
-    right:6px;
-
-    width:7px;
-    height:7px;
-
-    background:#ff3b30;
-    border-radius:50%;
-
-    box-shadow:0 0 10px #ff3b30;
-
-    animation:dotPulse 1.5s infinite;
-}
-
-@keyframes dotPulse{
-    0%,100%{
-        transform:scale(1);
-        opacity:1;
-    }
-
-    50%{
-        transform:scale(1.3);
-        opacity:.7;
-    }
-}
-.assistant-icon{
-    width:26px;
-    height:26px;
-
-    object-fit:contain;
-    display:block;
-
-    filter:
-        drop-shadow(0 0 6px rgba(138,43,226,.35))
-        drop-shadow(0 0 6px rgba(0,229,255,.25));
-
-    transition:.3s ease;
-}
-
-.assistant-icon:hover{
-    transform:scale(1.05);
-}
 /* =========================
    AI Tools Slider
 ========================= */
