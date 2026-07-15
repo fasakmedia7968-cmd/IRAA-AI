@@ -1,84 +1,220 @@
 index.html 
+Index.html 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>IRAA AI</title>
+
+  <!-- Main Styles -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Google Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+  <!-- App Root -->
   <div id="app">
-    <header class="top-bar">
-      <div class="brand">
-        <img src="1000080618.png" class="logo" alt="IRAA">
-        <span class="brand-name">IRAA</span>
-      </div>
-      <div class="top-actions">
-        <div class="reward">🎁 50</div>
-        <div class="wallet">🪙 120</div>
-      </div>
-    </header>
+<!-- =========================
+     IRAA TOP BAR
+========================= -->
+    
+<header class="top-bar">
 
-    <section class="search-section">
-      <div class="search-box">
-        <img src="search_3d.png" class="icon-3d">
-        <input type="text" placeholder="Search...">
-      </div>
-    </section>
-
-    <section class="iraa-premium">
-      <div class="premium-card">
-        <h2>IRAA Premium</h2>
-        <button class="upgrade-btn">Upgrade Now</button>
-      </div>
-    </section>
-
-    <section class="tools-section">
-      <div class="tools-header">
-        <h2>AI Tools</h2>
-        <span>View all</span>
-      </div>
-      <div class="tools-grid">
-        <div class="tool-card"><img src="music_3d.png"><span>Music</span></div>
-        <div class="tool-card"><img src="lyrics_3d.png"><span>Lyrics</span></div>
-        <div class="tool-card"><img src="voice_3d.png"><span>Voice</span></div>
-        <div class="tool-card"><img src="sing_3d.png"><span>Sing</span></div>
-        <div class="tool-card"><img src="video_3d.png"><span>Video</span></div>
-        <div class="tool-card"><img src="image_3d.png"><span>Image</span></div>
-      </div>
-    </section>
+  <div class="brand">
+    <img src="1000080618.png" class="logo" alt="IRAA Logo">
   </div>
 
-  <div id="creator-modal" class="modal">
-    <div class="modal-content">
-      <div class="options-grid">
-        <div class="option-card"><img src="image_3d.png"><span>Image</span></div>
-        <div class="option-card"><img src="audio_3d.png"><span>Audio</span></div>
-        <div class="option-card"><img src="video_3d.png"><span>Video</span></div>
-      </div>
+  <div class="top-actions">
+
+  <div class="reward">
+    🎁
+  </div>
+
+  <div class="wallet">
+    🪙 <span>120</span>
+  </div>
+
+<div class="notification">
+    <span class="material-icons">notifications</span>
+    <span class="dot"></span>
+</div>
+
+  </div>
+</header>
+
+    <section class="search-box">
+
+  <div class="search-container">
+
+    <span class="material-icons">search</span>
+
+    <input
+      type="text"
+      placeholder="Search Music, Videos, Images..."
+    >
+
+    <span class="material-icons">photo_camera</span>
+
+    <span class="material-icons">mic</span>
+
+    <img src="1000080618.png"
+     class="assistant-icon"
+     alt="IRAA Assistant">
+
+  </div>
+    </section>
+      <section class="premium-card">
+
+  <div class="premium-left">
+
+    <div class="premium-coins">
+      🪙
     </div>
+
+    <div class="premium-text">
+      <h3>IRAA Premium</h3>
+
+      <p>Unlimited Creativity</p>
+
+      <span>HD Audio • Ad-Free</span>
+
+      <button class="upgrade-btn">
+        Upgrade
+      </button>
+
+    </div>
+
   </div>
 
-  <nav class="bottom-nav">
-    <a href="#" class="nav-item active"><span class="material-icons">home</span><span>Home</span></a>
-    <a href="#" class="nav-item"><span class="material-icons">trending_up</span><span>Trending</span></a>
-    <a href="#" class="nav-item" id="creator-btn"><span class="material-icons">add_circle</span><span>Creator</span></a>
-    <a href="#" class="nav-item"><span class="material-icons">library_books</span><span>Library</span></a>
-    <a href="#" class="nav-item"><span class="material-icons">person</span><span>Profile</span></a>
-  </nav>
+  <div class="premium-right">
+      💎
+  </div>
 
-  <script>
-    // Modal Logic
-    const creatorBtn = document.getElementById('creator-btn');
-    const modal = document.getElementById('creator-modal');
-    creatorBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        modal.style.display = modal.style.display === 'flex' ? 'none' : 'flex';
-    });
-  </script>
+      </section>
+        <section class="tools-section">
+
+  <div class="tools-header">
+
+    <h2>AI Tools</h2>
+
+    <div class="tools-arrows">
+      <span class="arrow left">⟨</span>
+      <span class="arrow right">⟩</span>
+    </div>
+
+    <button class="view-all-btn">View All →</button>
+
+  </div>
+
+  <div class="tools-slider">
+
+    <!-- Page 1 -->
+    <div class="tools-page active">
+
+      <div class="tool-card"><span class="material-icons">slideshow</span><small>Lyrical Video</small></div>
+      <div class="tool-card"><span class="material-icons">movie_creation</span><small>Image to Video</small></div>
+      <div class="tool-card"><span class="material-icons">videocam</span><small>Video to Video</small></div>
+      <div class="tool-card"><span class="material-icons">music_video</span><small>Music Video</small></div>
+      <div class="tool-card"><span class="material-icons">smart_display</span><small>AI Reels</small></div>
+
+      <div class="tool-card"><span class="material-icons">description</span><small>AI Script</small></div>
+      <div class="tool-card"><span class="material-icons">record_voice_over</span><small>Voice Clone</small></div>
+      <div class="tool-card"><span class="material-icons">campaign</span><small>AI Ads</small></div>
+      <div class="tool-card"><span class="material-icons">audiotrack</span><small>Audio Tools</small></div>
+      <div class="tool-card"><span class="material-icons">auto_fix_high</span><small>AI Enhance</small></div>
+
+    </div>
+
+    <!-- Page 2 -->
+    <div class="tools-page">
+
+      <div class="tool-card"><span class="material-icons">music_note</span><small>AI Music</small></div>
+      <div class="tool-card"><span class="material-icons">edit_note</span><small>AI Lyrics</small></div>
+      <div class="tool-card"><span class="material-icons">mic</span><small>AI Voice</small></div>
+      <div class="tool-card"><span class="material-icons">movie</span><small>AI Video</small></div>
+      <div class="tool-card"><span class="material-icons">image</span><small>Image to Lyrics</small></div>
+
+      <div class="tool-card"><span class="material-icons">graphic_eq</span><small>Sing a Song</small></div>
+      <div class="tool-card"><span class="material-icons">photo</span><small>AI Image</small></div>
+      <div class="tool-card"><span class="material-icons">description</span><small>AI Poster</small></div>
+      <div class="tool-card"><span class="material-icons">menu_book</span><small>AI Story</small></div>
+      <div class="tool-card"><span class="material-icons">album</span><small>AI Cover</small></div>
+
+    </div>
+
+  </div>
+
+  <div class="slider-indicator">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+  </div>
+
+    </section>
+    <section class="trending-section">
+
+  <h2>🔥 Trending</h2>
+
+  <div class="trending-card">
+    <h3>Trending AI Music</h3>
+    <p>Discover the most popular songs created by the IRAA community.</p>
+  </div>
+
+    </section>
+    <div class="creator-menu">
+
+  <div class="creator-item">
+    <span class="material-icons">image</span>
+    <small>Image</small>
+  </div>
+
+  <div class="creator-item">
+    <span class="material-icons">audiotrack</span>
+    <small>Audio</small>
+  </div>
+
+  <div class="creator-item">
+    <span class="material-icons">videocam</span>
+    <small>Video</small>
+  </div>
+
+    </div>
+    <nav class="bottom-nav">
+
+  <div class="nav-item active">
+    <span class="material-icons">home</span>
+    <small>Home</small>
+  </div>
+
+  <div class="nav-item">
+    <span class="material-icons">trending_up</span>
+    <small>Trending</small>
+  </div>
+
+  <div class="nav-item creator">
+    <span class="material-icons">add</span>
+  </div>
+
+  <div class="nav-item">
+    <span class="material-icons">video_library</span>
+    <small>Library</small>
+  </div>
+
+  <div class="nav-item">
+    <span class="material-icons">person</span>
+    <small>Profile</small>
+  </div>
+
+    </nav>
+  </div>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+
 </body>
 </html>
-
