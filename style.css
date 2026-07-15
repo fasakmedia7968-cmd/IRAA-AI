@@ -214,52 +214,6 @@ gap:8px;
     cursor:pointer;
 }
 /* =========================
-   Premium Card
-========================= */
-
-.premium-card{
-    padding:20px;
-}
-
-.premium-content{
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.12);
-    border-radius:20px;
-padding:16px;
-    backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);
-
-    box-shadow:
-    0 0 20px rgba(138,43,226,.25),
-    0 0 10px rgba(0,229,255,.15);
-}
-
-.premium-content h3{
-    color:#ffffff;
-    font-size:22px;
-    margin-bottom:10px;
-}
-
-.premium-content p{
-    color:#cfcfcf;
-    font-size:14px;
-    line-height:1.6;
-    margin-bottom:18px;
-}
-
-.premium-btn{
-    width:100%;
-    border:none;
-    border-radius:18px;
-    padding:14px;
-    font-size:16px;
-    font-weight:700;
-    color:#fff;
-    cursor:pointer;
-
-    background:linear-gradient(90deg,#7b2cff,#00d4ff);
-}
-/* =========================
    AI Tools
 ========================= */
 
@@ -625,4 +579,87 @@ padding:16px;
 .slider-indicator .dot.active{
     background:#00d4ff;
     box-shadow:0 0 10px #00d4ff;
+}
+/* =========================
+   IRAA Premium Card
+========================= */
+
+.premium-card{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin:14px;
+    padding:16px;
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:22px;
+
+    backdrop-filter:blur(20px);
+    -webkit-backdrop-filter:blur(20px);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255,255,255,.18),
+        0 8px 22px rgba(138,43,226,.18),
+        0 4px 14px rgba(0,229,255,.12);
+}
+
+.premium-left{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.premium-coins{
+    font-size:34px;
+    filter:drop-shadow(0 0 8px rgba(255,215,0,.45));
+}
+
+.premium-text h3{
+    margin:0;
+    color:#fff;
+    font-size:17px;
+    font-weight:700;
+}
+
+.premium-text p{
+    margin:4px 0;
+    color:#ddd;
+    font-size:13px;
+}
+
+.premium-text span{
+    display:block;
+    margin-top:2px;
+    color:#9fdcff;
+    font-size:12px;
+}
+
+.upgrade-btn{
+    margin-top:10px;
+    width:90px;
+    height:32px;
+
+    border:none;
+    border-radius:16px;
+    cursor:pointer;
+
+    color:#fff;
+    font-size:13px;
+    font-weight:600;
+
+    background:linear-gradient(135deg,#8A2BE2,#00E5FF);
+
+    box-shadow:
+        0 4px 12px rgba(138,43,226,.25),
+        inset 0 1px 1px rgba(255,255,255,.18);
+}
+
+.premium-right{
+    font-size:42px;
+
+    filter:
+        drop-shadow(0 0 12px rgba(0,229,255,.45))
+        drop-shadow(0 0 8px rgba(138,43,226,.35));
 }
