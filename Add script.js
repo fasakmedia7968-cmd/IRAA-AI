@@ -10,29 +10,52 @@ creatorBtn.addEventListener("click", () => {
 // AI Tools Slider
 // =========================
 
-const toolsPage = document.querySelector(".tools-page");
-const leftArrow = document.querySelector(".tools-arrows span:first-child");
-const rightArrow = document.querySelector(".tools-arrows span:last-child");
+const pages = document.querySelectorAll(".tools-page");
+const dots = document.querySelectorAll(".slider-indicator .dot");
+
+const leftArrow = document.querySelector(".arrow.left");
+const rightArrow = document.querySelector(".arrow.right");
 
 let currentPage = 0;
-const pageWidth = 610; // 5 cards width
 
-rightArrow.addEventListener("click", () => {
-    currentPage++;
+function updateSlider() {
 
-    if(currentPage > 1){
-        currentPage = 0;
+    pages.forEach((page, index) => {
+        page.classList.remove("active");
+
+        if(index === currentPage){
+            page.classList.add("active");
+        }
+    });
+
+    dots.forEach((dot,index)=>{
+        dot.classList.toggle("active", index===currentPage);
+    });
+
+    leftArrow.style.visibility =
+        currentPage===0 ? "hidden" : "visible";
+
+    rightArrow.style.visibility =
+        currentPage===pages.length-1 ? "hidden" : "visible";
+}
+
+rightArrow.addEventListener("click",()=>{
+
+    if(currentPage < pages.length-1){
+        currentPage++;
+        updateSlider();
     }
 
-    toolsPage.style.transform = `translateX(-${currentPage * pageWidth}px)`;
 });
 
-leftArrow.addEventListener("click", () => {
-    currentPage--;
+leftArrow.addEventListener("click",()=>{
 
-    if(currentPage < 0){
-        currentPage = 1;
+    if(currentPage > 0){
+        currentPage--;
+        updateSlider();
     }
 
-    toolsPage.style.transform = `translateX(-${currentPage * pageWidth}px)`;
 });
+
+// Initial State
+updateSlider();
