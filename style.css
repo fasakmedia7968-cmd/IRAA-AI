@@ -172,8 +172,7 @@ border-radius:12px;
    Search Bar
 ========================= */
 .search-box{
-    padding:10px 14px 14px;
-}
+    padding:12px 14px 14px;
 }
 .search-container{
     display:flex;
