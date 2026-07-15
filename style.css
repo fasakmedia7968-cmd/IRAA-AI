@@ -610,6 +610,7 @@ padding:16px;
 .tools-scroll{
     width:100%;
     overflow:hidden;
+    position:relative;
 }
 
 .tools-page{
@@ -620,7 +621,8 @@ padding:16px;
 
     min-width:max-content;
 
-    transition:transform .45s ease;
+    transition:transform .45s ease-in-out;
+    will-change:transform;
 }
 
 /* =========================
