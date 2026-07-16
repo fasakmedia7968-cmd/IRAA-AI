@@ -796,34 +796,36 @@ body::after{
     position:relative;
     overflow:hidden;
 
-    min-height:122px;
+    min-height:128px;
 
-    padding:14px 18px 12px;
-
-    border-radius:22px;
+    padding:16px 18px 14px;
 
     display:flex;
     flex-direction:column;
+    justify-content:space-between;
+
+    border-radius:26px;
 
     background:
-        linear-gradient(
-        135deg,
-        rgba(255,255,255,.12),
-        rgba(255,255,255,.05));
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.14) 0%,
+        rgba(52,36,74,.32) 35%,
+        rgba(13,18,28,.78) 100%
+    );
 
-    border:1px solid rgba(255,255,255,.16);
+    border:1.5px solid rgba(255,255,255,.18);
 
-    backdrop-filter:blur(24px);
-    -webkit-backdrop-filter:blur(24px);
+    backdrop-filter:blur(28px);
+    -webkit-backdrop-filter:blur(28px);
 
     box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.28),
-        inset 0 -1px 0 rgba(255,255,255,.06),
-        0 8px 24px rgba(0,0,0,.30),
-        0 0 18px rgba(138,43,226,.12),
-        0 0 14px rgba(0,229,255,.10);
-
-    transition:.35s;
+        inset 0 2px 1px rgba(255,255,255,.30),
+        inset 0 -1px 1px rgba(255,255,255,.05),
+        0 0 0 1px rgba(255,255,255,.05),
+        0 18px 40px rgba(0,0,0,.45),
+        0 0 28px rgba(138,43,226,.20),
+        0 0 20px rgba(0,229,255,.15);
 }
 
 /* Glass Reflection */
@@ -834,21 +836,19 @@ body::after{
 
     position:absolute;
 
-    top:0;
-    left:0;
+    left:3%;
+    top:2px;
 
-    width:100%;
-    height:42%;
+    width:94%;
+    height:48%;
+
+    border-radius:22px;
 
     background:linear-gradient(
-
-        180deg,
-
-        rgba(255,255,255,.24),
-
+        to bottom,
+        rgba(255,255,255,.26),
         rgba(255,255,255,.08),
-
-        transparent
+        transparent 80%
     );
 
     pointer-events:none;
@@ -858,27 +858,29 @@ body::after{
 
 .premium-content::after{
 
-content:"";
+    content:"";
 
-position:absolute;
+    position:absolute;
 
-inset:0;
+    inset:0;
 
-background:
+    border-radius:26px;
 
-radial-gradient(circle at 15% 20%,
-rgba(255,255,255,.12),
-transparent 35%),
+    background:
 
-radial-gradient(circle at 85% 85%,
-rgba(0,229,255,.08),
-transparent 40%),
+    radial-gradient(circle at 0% 0%,
+    rgba(138,43,226,.22),
+    transparent 35%),
 
-radial-gradient(circle at 50% 100%,
-rgba(138,43,226,.08),
-transparent 45%);
+    radial-gradient(circle at 100% 0%,
+    rgba(0,229,255,.18),
+    transparent 35%),
 
-pointer-events:none;
+    radial-gradient(circle at 50% 100%,
+    rgba(255,255,255,.05),
+    transparent 55%);
+
+    pointer-events:none;
 }
 /* =========================
    Header
@@ -907,15 +909,10 @@ pointer-events:none;
 }
 
 .crown{
-
-    position:relative;
-
-    top:8px;
-
-    font-size:32px;
+    font-size:38px;
 
     filter:
-    drop-shadow(0 0 4px rgba(255,215,0,.28));
+    drop-shadow(0 0 8px rgba(255,210,0,.45));
 }
 
 /* Premium Title */
@@ -964,11 +961,10 @@ pointer-events:none;
 }
 
 .diamond{
-
-    font-size:34px;
+    font-size:38px;
 
     filter:
-    drop-shadow(0 0 4px rgba(0,229,255,.30));
+    drop-shadow(0 0 10px rgba(0,229,255,.45));
 
     animation:diamondFloat 3s ease-in-out infinite;
 }
