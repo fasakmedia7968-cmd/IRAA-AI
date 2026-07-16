@@ -382,7 +382,11 @@ body::after{
 .glass-icon .material-icons{
     font-size:14px;
 }
-
+.search-assistant-icon{
+    width:15px;
+    height:15px;
+    object-fit:contain;
+}
 /* Search Input */
 
 .search-input{
