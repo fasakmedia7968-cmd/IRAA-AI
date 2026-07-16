@@ -209,16 +209,6 @@ body::after{
     flex:1;
 }
 
-.logo{
-    height:22px;
-    width:auto;
-    object-fit:contain;
-
-    filter:
-        drop-shadow(0 0 5px rgba(138,43,226,.35))
-        drop-shadow(0 0 5px rgba(0,229,255,.25));
-}
-
 /* Right Actions */
 
 .top-actions{
