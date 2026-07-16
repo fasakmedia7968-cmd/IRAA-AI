@@ -20,31 +20,40 @@ index.html
   <!-- App Root -->
   <div id="app">
 <!-- =========================
-     IRAA TOP BAR
+     IRAA AI Top Bar
 ========================= -->
-    
+
 <header class="top-bar">
 
-  <div class="brand">
-    <img src="1000080618.png" class="logo" alt="IRAA Logo">
-  </div>
+    <!-- Left : IRAA Logo -->
+    <div class="brand">
+        <img src="1000080618.png"
+             alt="IRAA AI"
+             class="logo">
+    </div>
 
-  <div class="top-actions">
+    <!-- Right : Actions -->
+    <div class="top-actions">
 
-  <div class="reward">
-    🎁
-  </div>
+        <!-- Rewards -->
+        <button class="action-btn reward-btn" aria-label="Rewards">
+            <span class="material-icons">redeem</span>
+        </button>
 
-  <div class="wallet">
-    🪙 <span>120</span>
-  </div>
+        <!-- Coins -->
+        <button class="action-btn wallet-btn" aria-label="Coins">
+            <span class="material-icons">diamond</span>
+            <span class="coins">120</span>
+        </button>
 
-<div class="notification">
-    <span class="material-icons">notifications</span>
-    <span class="dot"></span>
-</div>
+        <!-- Notification -->
+        <button class="action-btn notify-btn" aria-label="Notifications">
+            <span class="material-icons">notifications</span>
+            <span class="notify-dot"></span>
+        </button>
 
-  </div>
+    </div>
+
 </header>
 
     <div class="search-container">
