@@ -199,26 +199,17 @@ body::after{
     );
 
     pointer-events:none;
+
 }
-
-/* Brand */
-
-.brand{
-    display:flex;
-    align-items:center;
-    flex:1;
-}
-
-/* Right Actions */
 
 .top-actions{
     display:flex;
     align-items:center;
     gap:6px;
+
 }
 
 /* Glass Buttons */
-
 .action-btn{
     position:relative;
 
