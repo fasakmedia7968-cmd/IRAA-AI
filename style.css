@@ -961,19 +961,20 @@ body::after{
 ========================= */
 
 .spark{
+    position:absolute;
+
     width:3px;
     height:3px;
 
     border-radius:50%;
-
     background:#fff;
 
     box-shadow:
-        0 0 8px #fff,
-        0 0 14px #00E5FF,
-        0 0 22px #8A2BE2;
+        0 0 6px #fff,
+        0 0 12px #00E5FF,
+        0 0 18px #8A2BE2;
 
-    animation:sparkFloat 2.8s ease-in-out infinite;
+    animation:sparkFloat 2.5s ease-in-out infinite;
 }
 
 /* Top Right */
