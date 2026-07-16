@@ -785,15 +785,20 @@ body::after{
 ========================= */
 
 .premium-card{
-    padding:10px 16px;
+    padding:20px 16px 12px;
 }
 
 .premium-content{
     position:relative;
     overflow:hidden;
 
-    padding:14px 16px;
-    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    padding:16px 18px;
+    border-radius:22px;
+    min-height:145px;
 
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.15);
@@ -860,33 +865,34 @@ body::after{
 .premium-title{
     display:flex;
     align-items:center;
-    gap:8px;
+    gap:12px;
 }
 
 .crown{
-    font-size:28px;
+    font-size:42px;
 
     filter:
         drop-shadow(0 0 10px #FFD54A)
-        drop-shadow(0 0 20px rgba(255,215,0,.45));
+        drop-shadow(0 0 24px rgba(255,215,0,.60));
 }
 
 .premium-title h3{
     color:#fff;
-    font-size:18px;
+    font-size:22px;
     font-weight:700;
 }
 
 /* Subtitle */
 
 .premium-sub{
-    margin-top:6px;
+    margin-top:8px;
 
-    color:rgba(255,255,255,.82);
+    color:rgba(255,255,255,.88);
 
-    font-size:12px;
+    font-size:14px;
+    font-weight:500;
 
-    white-space:nowrap;
+    text-align:center;
 }
 
 /* Upgrade */
@@ -895,13 +901,13 @@ body::after{
 
     display:block;
 
-    margin:10px auto 0;
+    width:120px;
+    height:40px;
 
-    width:96px;
-    height:34px;
+    margin:14px auto 0;
 
     border:none;
-    border-radius:17px;
+    border-radius:20px;
 
     background:linear-gradient(
         135deg,
@@ -910,16 +916,15 @@ body::after{
     );
 
     color:#fff;
-    font-size:13px;
-    font-weight:600;
 
-    cursor:pointer;
+    font-size:15px;
+    font-weight:700;
 
     box-shadow:
-        0 5px 14px rgba(138,43,226,.28),
-        inset 0 1px 1px rgba(255,255,255,.18);
+        0 6px 18px rgba(138,43,226,.35),
+        inset 0 1px 2px rgba(255,255,255,.25);
 
-    transition:.3s ease;
+    transition:.3s;
 }
 
 .premium-btn:hover{
@@ -930,15 +935,15 @@ body::after{
 
 .diamond-wrap{
     position:relative;
-    top:6px;
+    top:8px;
 }
 
 .diamond{
-    font-size:34px;
+    font-size:54px;
 
     filter:
-        drop-shadow(0 0 10px #00E5FF)
-        drop-shadow(0 0 18px rgba(0,229,255,.45));
+        drop-shadow(0 0 14px #00E5FF)
+        drop-shadow(0 0 28px rgba(0,229,255,.60));
 
     animation:diamondFloat 3s ease-in-out infinite;
 }
