@@ -146,23 +146,23 @@ body::after{
     text-shadow:0 0 8px rgba(138,43,226,.35);
 }
 /* =========================
-   IRAA Premium Top Bar
+   IRAA AI Top Bar V2
 ========================= */
 
 .top-bar{
     position:sticky;
-    top:0;
+    top:12px;
     z-index:1000;
 
     display:flex;
     align-items:center;
     justify-content:space-between;
 
-    height:56px;
-    margin:10px 12px 0;
+    margin:12px 16px 0;
     padding:0 16px;
+    height:60px;
 
-    border-radius:18px;
+    border-radius:22px;
 
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.14);
@@ -170,115 +170,107 @@ body::after{
     backdrop-filter:blur(22px);
     -webkit-backdrop-filter:blur(22px);
 
-    overflow:hidden;
-
     box-shadow:
         inset 0 1px 1px rgba(255,255,255,.28),
-        inset 0 -1px 1px rgba(255,255,255,.08),
-        0 8px 24px rgba(138,43,226,.18),
-        0 4px 12px rgba(0,229,255,.10);
+        inset 0 -1px 1px rgba(255,255,255,.06),
+        0 8px 24px rgba(138,43,226,.16),
+        0 4px 16px rgba(0,229,255,.10);
 
-    transition:.3s ease;
+    overflow:hidden;
 }
-
-/* Glass Reflection */
 
 .top-bar::before{
     content:"";
     position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:45%;
+    inset:0 0 auto 0;
+    height:46%;
 
     background:linear-gradient(
         180deg,
-        rgba(255,255,255,.20),
+        rgba(255,255,255,.22),
         transparent
     );
 
     pointer-events:none;
 }
 
-/* Right Actions */
+.brand{
+    display:flex;
+    align-items:center;
+}
+
+.logo{
+    height:30px;
+    width:auto;
+    object-fit:contain;
+
+    filter:
+        drop-shadow(0 0 8px rgba(138,43,226,.45))
+        drop-shadow(0 0 8px rgba(0,229,255,.35));
+}
 
 .top-actions{
     display:flex;
     align-items:center;
     gap:10px;
-    margin-left:auto;
 }
 
-/* Glass Buttons */
-
-.reward,
-.wallet,
-.notification{
+.action-btn{
     position:relative;
 
     display:flex;
     align-items:center;
     justify-content:center;
+    gap:6px;
 
-    min-width:36px;
-    height:36px;
-    padding:0 10px;
+    height:38px;
+    min-width:38px;
+    padding:0 12px;
 
-    border-radius:16px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+
+    color:#fff;
+
+    border-radius:18px;
 
     background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.14);
 
-    backdrop-filter:blur(16px);
-    -webkit-backdrop-filter:blur(16px);
+    backdrop-filter:blur(18px);
 
     box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.18),
-        0 4px 12px rgba(138,43,226,.15);
+        inset 0 1px 1px rgba(255,255,255,.20),
+        0 4px 14px rgba(138,43,226,.14);
 
-    transition:.3s ease;
+    transition:.25s;
 }
 
-.reward:hover,
-.wallet:hover,
-.notification:hover{
+.action-btn:hover{
     transform:translateY(-2px);
 }
 
-/* Material Icons */
-
-.reward .material-icons,
-.wallet .material-icons,
-.notification .material-icons{
+.action-btn .material-icons{
     font-size:20px;
-    color:#fff;
-
-    text-shadow:
-        0 0 8px rgba(138,43,226,.45),
-        0 0 8px rgba(0,229,255,.30);
 }
 
-/* Wallet Text */
-
-.wallet span{
-    margin-left:5px;
+.coins{
     font-size:13px;
     font-weight:600;
-    color:#fff;
 }
 
-/* Notification Dot */
-
-.dot{
+.notify-dot{
     position:absolute;
-    top:6px;
-    right:6px;
+    top:8px;
+    right:8px;
 
     width:8px;
     height:8px;
 
-    background:#ff3b30;
     border-radius:50%;
+
+    background:#ff3b30;
 
     box-shadow:
         0 0 8px #ff3b30,
@@ -288,6 +280,7 @@ body::after{
 }
 
 @keyframes dotPulse{
+
     0%,100%{
         transform:scale(1);
         opacity:1;
