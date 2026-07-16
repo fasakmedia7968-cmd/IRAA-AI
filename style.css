@@ -106,26 +106,6 @@ body::after{
 }
 
 /* =========================
-   IRAA Assistant Icon
-========================= */
-
-.assistant-icon{
-    width:24px;
-    height:24px;
-    object-fit:contain;
-
-    filter:
-        drop-shadow(0 0 6px rgba(138,43,226,.45))
-        drop-shadow(0 0 6px rgba(0,229,255,.30));
-
-    transition:0.3s ease;
-}
-
-.assistant-icon:hover{
-    transform:scale(1.05);
-}
-
-/* =========================
    Brand
 ========================= */
 
@@ -137,14 +117,6 @@ body::after{
     max-width:180px;
 }
 
-.brand-name{
-    font-family:'Outfit',sans-serif;
-    font-size:18px;
-    font-weight:700;
-    letter-spacing:1px;
-    color:#ffffff;
-    text-shadow:0 0 8px rgba(138,43,226,.35);
-}
 /* =========================
    IRAA AI Top Bar (Final V1)
 ========================= */
