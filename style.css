@@ -781,366 +781,318 @@ body::after{
     box-shadow:0 0 10px #00d4ff;
 }
 
-/* =========================
-   IRAA Premium Card V2
-   Part 1
-========================= */
+/*==========================================
+   IRAA PREMIUM CARD V2
+==========================================*/
 
 .premium-card{
-    padding:16px;
-    margin-top:14px;
+    width:100%;
+    padding:0 16px;
+    margin:16px 0;
+    box-sizing:border-box;
 }
 
-.premium-content{
-
+.premium-glass{
     position:relative;
-    overflow:hidden;
-
-    min-height:128px;
-
-    padding:16px 18px 14px;
+    width:100%;
+    height:82px;
 
     display:flex;
-    flex-direction:column;
+    align-items:center;
     justify-content:space-between;
 
-    border-radius:26px;
+    padding:0 14px;
+
+    border-radius:20px;
 
     background:
     linear-gradient(
-        145deg,
-        rgba(255,255,255,.14) 0%,
-        rgba(52,36,74,.32) 35%,
-        rgba(13,18,28,.78) 100%
-    );
+    135deg,
+    rgba(255,255,255,.12),
+    rgba(255,255,255,.05));
 
-    border:1.5px solid rgba(255,255,255,.18);
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
 
-    backdrop-filter:blur(28px);
-    -webkit-backdrop-filter:blur(28px);
+    border:1px solid rgba(255,255,255,.14);
+
+    overflow:hidden;
 
     box-shadow:
-        inset 0 2px 1px rgba(255,255,255,.30),
-        inset 0 -1px 1px rgba(255,255,255,.05),
-        0 0 0 1px rgba(255,255,255,.05),
-        0 18px 40px rgba(0,0,0,.45),
-        0 0 28px rgba(138,43,226,.20),
-        0 0 20px rgba(0,229,255,.15);
+    0 0 18px rgba(126,87,255,.28),
+    0 0 28px rgba(0,188,255,.18),
+    inset 0 1px 0 rgba(255,255,255,.18);
 }
 
-/* Glass Reflection */
+/*==============================
+  Glass Reflection
+==============================*/
 
-.premium-content::before{
+.premium-glass::before{
 
     content:"";
 
     position:absolute;
 
-    left:3%;
-    top:2px;
+    top:-35%;
+    left:-20%;
 
-    width:94%;
-    height:48%;
-
-    border-radius:22px;
+    width:60%;
+    height:170%;
 
     background:linear-gradient(
-        to bottom,
-        rgba(255,255,255,.26),
-        rgba(255,255,255,.08),
-        transparent 80%
-    );
+    120deg,
+    rgba(255,255,255,.28),
+    transparent);
+
+    transform:rotate(-18deg);
 
     pointer-events:none;
+
 }
 
-/* Bottom Reflection */
+/*==============================
+ Left
+==============================*/
 
-.premium-content::after{
+.premium-left{
 
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    border-radius:26px;
-
-    background:
-
-    radial-gradient(circle at 0% 0%,
-    rgba(138,43,226,.22),
-    transparent 35%),
-
-    radial-gradient(circle at 100% 0%,
-    rgba(0,229,255,.18),
-    transparent 35%),
-
-    radial-gradient(circle at 50% 100%,
-    rgba(255,255,255,.05),
-    transparent 55%);
-
-    pointer-events:none;
-}
-/* =========================
-   Header
-========================= */
-
-.premium-header{
-
-    position:relative;
+    width:58px;
+    height:100%;
 
     display:flex;
+    align-items:center;
+    justify-content:center;
 
-    justify-content:space-between;
+    flex-shrink:0;
 
-    align-items:flex-start;
 }
 
-/* Crown */
+/*==============================
+ Center
+==============================*/
 
-.crown-wrap{
+.premium-center{
 
-    width:44px;
+    flex:1;
 
     display:flex;
+    flex-direction:column;
 
-    justify-content:flex-start;
-}
-
-.crown{
-    font-size:38px;
-
-    filter:
-    drop-shadow(0 0 8px rgba(255,210,0,.45));
-}
-
-/* Premium Title */
-
-.premium-title{
-
-    position:absolute;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    width:100%;
+    align-items:center;
+    justify-content:center;
 
     text-align:center;
 
-    pointer-events:none;
 }
 
-.premium-title h3{
+/*==============================
+ Right
+==============================*/
 
-    margin:2px 0 0;
+.premium-right{
+
+    position:relative;
+
+    width:58px;
+    height:100%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    flex-shrink:0;
+
+}
+/*==========================================
+  CROWN
+==========================================*/
+
+.crown{
+
+    font-size:48px;
+    line-height:1;
+
+    filter:
+    drop-shadow(0 0 8px rgba(255,215,0,.75))
+    drop-shadow(0 0 18px rgba(255,180,0,.45));
+
+    animation:crownFloat 4s ease-in-out infinite;
+
+}
+
+/*==========================================
+  TITLE
+==========================================*/
+
+.premium-center h2{
+
+    margin:0;
+
+    font-size:18px;
+    font-weight:700;
 
     color:#fff;
 
-    font-size:18px;
-
-    font-weight:700;
-
     letter-spacing:.3px;
+
+    line-height:1.1;
+
 }
 
-/* Diamond */
+/*==========================================
+  SUB TITLE
+==========================================*/
 
-.diamond-wrap{
+.premium-center p{
 
-    position:relative;
+    margin:4px 0 7px;
 
-    width:44px;
+    font-size:11px;
 
-    display:flex;
-
-    justify-content:flex-end;
-
-    margin-top:8px;
-}
-
-.diamond{
-    font-size:38px;
-
-    filter:
-    drop-shadow(0 0 10px rgba(0,229,255,.45));
-
-    animation:diamondFloat 3s ease-in-out infinite;
-}
-/* =========================
-   Subtitle
-========================= */
-
-.premium-sub{
-
-    margin:6px 0 0;
-
-    text-align:center;
-
-    font-size:10px;
-
-    font-weight:500;
-
-    color:rgba(255,255,255,.82);
-
-    letter-spacing:.3px;
+    color:rgba(255,255,255,.78);
 
     white-space:nowrap;
+
+    line-height:1;
+
 }
 
-/* =========================
-   Upgrade Button
-========================= */
+/*==========================================
+  UPGRADE BUTTON
+==========================================*/
 
-.premium-btn{
+.upgrade-btn{
 
-    margin:12px auto 0;
-
-    width:102px;
-    height:34px;
+    width:100px;
+    height:26px;
 
     border:none;
     outline:none;
 
-    border-radius:18px;
+    border-radius:999px;
+
+    font-size:12px;
+    font-weight:600;
 
     color:#fff;
-
-    font-size:13px;
-    font-weight:600;
 
     cursor:pointer;
 
     background:linear-gradient(
-        135deg,
-        #8A2BE2,
-        #00E5FF
-    );
+    90deg,
+    #7B5CFF,
+    #2EB9FF);
 
     box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.25),
-        0 6px 18px rgba(138,43,226,.25);
+    0 0 12px rgba(123,92,255,.45),
+    0 0 18px rgba(46,185,255,.25);
 
     transition:.25s;
+
 }
 
-.premium-btn:hover{
+.upgrade-btn:hover{
 
     transform:translateY(-1px);
 
-    box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.25),
-        0 8px 20px rgba(138,43,226,.32);
 }
 
-/* =========================
-   Diamond Particles
-========================= */
+/*==========================================
+  DIAMOND
+==========================================*/
 
-.spark{
+.diamond{
 
+    font-size:48px;
+
+    line-height:1;
+
+    filter:
+    drop-shadow(0 0 8px rgba(0,220,255,.75))
+    drop-shadow(0 0 18px rgba(0,170,255,.40));
+
+    animation:diamondFloat 4s ease-in-out infinite;
+
+}
+/*==========================================
+  SPARK STARS
+==========================================*/
+
+.star{
     position:absolute;
 
-    width:4px;
-    height:4px;
-
-    border-radius:50%;
-
-    background:#fff;
-
-    opacity:.8;
-
-    box-shadow:
-        0 0 4px #fff,
-        0 0 8px #00E5FF;
-
-    animation:sparkFloat 2.4s ease-in-out infinite;
-}
-
-.s1{
-    top:-8px;
-    left:14px;
-}
-
-.s2{
-    top:6px;
-    right:-6px;
-    animation-delay:.3s;
-}
-
-.s3{
-    bottom:8px;
-    left:-8px;
-    animation-delay:.6s;
-}
-
-.s4{
-    bottom:-4px;
-    right:12px;
-    animation-delay:.9s;
-}
-
-.s5{
-    top:16px;
-    left:26px;
-    width:3px;
-    height:3px;
-    animation-delay:1.2s;
-}
-
-.s6{
-    bottom:18px;
-    right:22px;
-    width:3px;
-    height:3px;
-    animation-delay:1.5s;
-}
-
-/* Extra Twinkle Stars */
-
-.diamond-wrap::before{
-
-    content:"✦";
-
-    position:absolute;
-
-    top:-12px;
-    right:8px;
-
-    font-size:9px;
+    font-size:10px;
 
     color:#fff;
 
     text-shadow:
-        0 0 6px #fff,
-        0 0 12px #00E5FF;
+    0 0 6px rgba(255,255,255,.9),
+    0 0 12px rgba(0,220,255,.6);
 
-    animation:twinkle 2.5s infinite;
+    animation:twinkle 2.8s infinite ease-in-out;
 }
 
-.diamond-wrap::after{
+/* Star Positions */
 
-    content:"✦";
+.star1{
+    top:10px;
+    right:8px;
+    animation-delay:0s;
+}
 
-    position:absolute;
-
-    bottom:2px;
-    left:-10px;
-
+.star2{
+    top:22px;
+    right:42px;
     font-size:8px;
-
-    color:#B8F5FF;
-
-    text-shadow:
-        0 0 5px #00E5FF;
-
-    animation:twinkle 2.2s infinite .8s;
+    animation-delay:.5s;
 }
 
-/* =========================
-   Animations
-========================= */
+.star3{
+    top:42px;
+    right:6px;
+    animation-delay:1s;
+}
+
+.star4{
+    top:12px;
+    right:52px;
+    font-size:9px;
+    animation-delay:1.5s;
+}
+
+.star5{
+    top:54px;
+    right:36px;
+    animation-delay:2s;
+}
+
+.star6{
+    top:34px;
+    right:58px;
+    font-size:7px;
+    animation-delay:2.5s;
+}
+
+/*==========================================
+  CROWN FLOAT
+==========================================*/
+
+@keyframes crownFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-3px);
+    }
+
+}
+
+/*==========================================
+  DIAMOND FLOAT
+==========================================*/
 
 @keyframes diamondFloat{
 
@@ -1149,22 +1101,14 @@ body::after{
     }
 
     50%{
-        transform:translateY(-2px);
+        transform:translateY(-4px);
     }
+
 }
 
-@keyframes sparkFloat{
-
-    0%,100%{
-        transform:scale(.7);
-        opacity:.35;
-    }
-
-    50%{
-        transform:scale(1.4);
-        opacity:1;
-    }
-}
+/*==========================================
+  STAR TWINKLE
+==========================================*/
 
 @keyframes twinkle{
 
@@ -1177,4 +1121,32 @@ body::after{
         opacity:1;
         transform:scale(1.25);
     }
+
+}
+
+/*==========================================
+  RESPONSIVE
+==========================================*/
+
+@media (max-width:380px){
+
+    .premium-center h2{
+        font-size:16px;
+    }
+
+    .premium-center p{
+        font-size:10px;
+    }
+
+    .upgrade-btn{
+        width:90px;
+        height:24px;
+        font-size:11px;
+    }
+
+    .crown,
+    .diamond{
+        font-size:42px;
+    }
+
 }
