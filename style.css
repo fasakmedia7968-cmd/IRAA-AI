@@ -927,15 +927,12 @@ body::after{
 /* Crown */
 
 .crown{
-
+    font-size:34px;
     position:relative;
-    top:3px;
-
-    font-size:30px;
+    top:6px;
 
     filter:
-    drop-shadow(0 0 4px rgba(255,215,0,.45))
-    drop-shadow(0 0 8px rgba(255,215,0,.20));
+    drop-shadow(0 0 2px rgba(255,215,0,.30));
 }
 
 /* IRAA Premium */
@@ -960,22 +957,14 @@ body::after{
 ========================= */
 
 .diamond-wrap{
-
-    position:relative;
-
-    top:7px;
-    right:2px;
+    top:12px;
 }
 
 .diamond{
-
-    font-size:38px;
+    font-size:42px;
 
     filter:
-    drop-shadow(0 0 5px rgba(0,229,255,.35))
-    drop-shadow(0 0 10px rgba(138,43,226,.18));
-
-    animation:diamondFloat 3s ease-in-out infinite;
+    drop-shadow(0 0 3px rgba(0,229,255,.25));
 }
 
 /* =========================
