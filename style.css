@@ -431,11 +431,6 @@ body::after{
     font-size:13px;
 }
 
-.assistant-icon{
-    width:15px;
-    height:15px;
-    object-fit:contain;
-}
 
 /* Focus */
 
