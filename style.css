@@ -317,57 +317,58 @@ body::after{
     }
 
 }
-/* ==========================================
-   IRAA AI Premium Search Bar V2
-========================================== */
+/* =========================
+   IRAA AI Search Bar
+========================= */
 
 .search-section{
-    margin:16px 16px 20px;
+    display:flex;
+    justify-content:center;
+    margin:8px 0 12px;
 }
 
 .search-container{
-    position:relative;
+    width:280px;
+    height:34px;
 
     display:flex;
     align-items:center;
 
-    width:100%;
-    height:64px;
+    padding:0 8px;
+    gap:6px;
 
-    padding:0 12px;
-
-    border-radius:24px;
-
-    background:rgba(255,255,255,.09);
-    border:1px solid rgba(255,255,255,.18);
-
-    backdrop-filter:blur(28px);
-    -webkit-backdrop-filter:blur(28px);
-
+    position:relative;
     overflow:hidden;
 
+    border-radius:17px;
+
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.12);
+
     box-shadow:
-        inset 0 2px 2px rgba(255,255,255,.28),
-        inset 0 -2px 2px rgba(255,255,255,.06),
-        0 0 24px rgba(138,43,226,.20),
-        0 10px 30px rgba(0,0,0,.28);
+        inset 0 1px 0 rgba(255,255,255,.18),
+        0 0 8px rgba(138,43,226,.12),
+        0 0 8px rgba(0,229,255,.08);
 }
 
-/* Glass Highlight */
+/* Inner Reflection */
 
 .search-container::before{
     content:"";
     position:absolute;
-    left:0;
-    top:0;
+    top:1px;
+    left:2%;
+    width:96%;
+    height:45%;
 
-    width:100%;
-    height:48%;
+    border-radius:17px;
 
     background:linear-gradient(
-        180deg,
-        rgba(255,255,255,.28),
-        rgba(255,255,255,.08),
+        to bottom,
+        rgba(255,255,255,.18),
         transparent
     );
 
@@ -377,107 +378,87 @@ body::after{
 /* Left Search */
 
 .search-icon-btn{
-    width:42px;
-    height:42px;
+    width:20px;
+    height:20px;
+
+    border:none;
+    background:transparent;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
-    border:none;
-    border-radius:50%;
-
-    background:rgba(255,255,255,.10);
-    border:1px solid rgba(255,255,255,.18);
-
     color:#fff;
-
-    backdrop-filter:blur(20px);
-
-    box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.22),
-        0 0 12px rgba(138,43,226,.18);
-
     cursor:pointer;
 }
 
 .search-icon-btn .material-icons{
-    font-size:22px;
+    font-size:12px;
 }
 
-/* Input */
+/* Search Input */
 
 .search-input{
     flex:1;
-
-    margin:0 14px;
 
     background:transparent;
     border:none;
     outline:none;
 
     color:#fff;
-
-    font-size:15px;
-    font-weight:500;
+    font-size:12px;
 }
 
 .search-input::placeholder{
-    color:rgba(255,255,255,.68);
+    color:#bdbdbd;
 }
 
-/* Right Icons */
+/* Right Side */
 
 .search-right{
     display:flex;
     align-items:center;
-    gap:8px;
+    gap:4px;
 }
 
+/* Glass Icons */
+
 .glass-icon{
-    width:42px;
-    height:42px;
+    width:20px;
+    height:20px;
+
+    border:none;
+    border-radius:50%;
 
     display:flex;
     align-items:center;
     justify-content:center;
 
-    border:none;
-    border-radius:50%;
-
-    background:rgba(255,255,255,.10);
-    border:1px solid rgba(255,255,255,.18);
+    background:rgba(255,255,255,.08);
 
     color:#fff;
-
-    backdrop-filter:blur(20px);
-
-    box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.22),
-        0 0 12px rgba(0,229,255,.18);
-
-    transition:.25s;
     cursor:pointer;
 }
 
-.glass-icon:hover{
-    transform:translateY(-2px) scale(1.05);
-}
-
 .glass-icon .material-icons{
-    font-size:21px;
+    font-size:11px;
 }
 
-/* IRAA AI */
-
-.ai-btn img{
-    width:24px;
-    height:24px;
+.assistant-icon{
+    width:12px;
+    height:12px;
     object-fit:contain;
+}
 
-    filter:
-        drop-shadow(0 0 8px rgba(138,43,226,.50))
-        drop-shadow(0 0 8px rgba(0,229,255,.40));
+/* Focus */
+
+.search-container:focus-within{
+    border-color:rgba(138,43,226,.35);
+
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.22),
+        0 0 10px rgba(138,43,226,.20),
+        0 0 10px rgba(0,229,255,.15);
 }
 /* =========================
    AI Tools
