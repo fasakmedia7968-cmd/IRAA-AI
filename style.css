@@ -785,15 +785,15 @@ body::after{
 ========================= */
 
 .premium-card{
-    padding:14px 18px;
+    padding:10px 16px;
 }
 
 .premium-content{
     position:relative;
     overflow:hidden;
 
-    padding:18px;
-    border-radius:22px;
+    padding:14px 16px;
+    border-radius:20px;
 
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.15);
@@ -880,25 +880,28 @@ body::after{
 /* Subtitle */
 
 .premium-sub{
-    margin-top:10px;
+    margin-top:6px;
 
     color:rgba(255,255,255,.82);
 
-    font-size:13px;
-    font-weight:500;
+    font-size:12px;
+
+    white-space:nowrap;
 }
 
 /* Upgrade */
 
 .premium-btn{
 
-    margin-top:14px;
+    display:block;
 
-    width:92px;
+    margin:10px auto 0;
+
+    width:96px;
     height:34px;
 
     border:none;
-    border-radius:18px;
+    border-radius:17px;
 
     background:linear-gradient(
         135deg,
@@ -927,73 +930,115 @@ body::after{
 
 .diamond-wrap{
     position:relative;
+    top:6px;
 }
 
 .diamond{
-
-    font-size:40px;
+    font-size:34px;
 
     filter:
-        drop-shadow(0 0 12px #00E5FF)
-        drop-shadow(0 0 22px rgba(0,229,255,.55));
+        drop-shadow(0 0 10px #00E5FF)
+        drop-shadow(0 0 18px rgba(0,229,255,.45));
 
     animation:diamondFloat 3s ease-in-out infinite;
 }
 
-/* Sparkles */
+/* =========================
+   Diamond Glow Particles
+========================= */
 
 .spark{
     position:absolute;
-
-    width:5px;
-    height:5px;
-
+    width:4px;
+    height:4px;
     border-radius:50%;
 
     background:#ffffff;
 
-    box-shadow:0 0 8px #00E5FF;
+    box-shadow:
+        0 0 6px #ffffff,
+        0 0 12px #00E5FF,
+        0 0 18px #8A2BE2;
 
-    animation:spark 2.5s infinite;
+    animation:sparkFloat 2.8s ease-in-out infinite;
 }
 
+/* Top Right */
 .s1{
     top:-6px;
-    right:2px;
+    right:6px;
 }
 
+/* Left Center */
 .s2{
-    bottom:8px;
     left:-8px;
-    animation-delay:.6s;
+    top:18px;
+    animation-delay:.8s;
 }
 
+/* Bottom Right */
 .s3{
     right:-6px;
-    bottom:-3px;
-    animation-delay:1.2s;
+    bottom:8px;
+    animation-delay:1.6s;
 }
 
-@keyframes diamondFloat{
+/* Extra Small Star */
+.diamond-wrap::before{
+    content:"✦";
+    position:absolute;
+    top:-12px;
+    left:12px;
 
-    0%,100%{
-        transform:translateY(0);
-    }
+    font-size:10px;
+    color:#fff;
 
-    50%{
-        transform:translateY(-4px);
-    }
+    text-shadow:
+        0 0 8px #fff,
+        0 0 16px #00E5FF;
+
+    animation:twinkle 2s infinite;
 }
 
-@keyframes spark{
+/* Extra Small Star */
+.diamond-wrap::after{
+    content:"✦";
+    position:absolute;
+    bottom:0;
+    right:-12px;
+
+    font-size:9px;
+    color:#7DF9FF;
+
+    text-shadow:
+        0 0 8px #00E5FF,
+        0 0 16px #8A2BE2;
+
+    animation:twinkle 2.5s infinite .8s;
+}
+
+@keyframes sparkFloat{
 
     0%,100%{
         transform:scale(.7);
-        opacity:.3;
+        opacity:.4;
     }
 
     50%{
-        transform:scale(1.4);
+        transform:scale(1.5);
         opacity:1;
+    }
+}
+
+@keyframes twinkle{
+
+    0%,100%{
+        opacity:.3;
+        transform:scale(.8);
+    }
+
+    50%{
+        opacity:1;
+        transform:scale(1.3);
     }
 }
