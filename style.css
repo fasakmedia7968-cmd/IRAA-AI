@@ -796,9 +796,9 @@ body::after{
     flex-direction:column;
     justify-content:space-between;
 
-    padding:10px 16px;
+    padding:8px 16px;
     border-radius:22px;
-    min-height:95px;
+    min-height:88px;
 
     background:rgba(255,255,255,.08);
     border:1px solid rgba(255,255,255,.15);
@@ -872,7 +872,7 @@ body::after{
     font-size:42px;
 
     position:relative;
-    top:4px;
+    top:6px;
 
     filter:
         drop-shadow(0 0 10px #FFD54A)
@@ -885,21 +885,21 @@ body::after{
     font-weight:700;
 
     position:relative;
-    top:-2px;
+    top:-6px;
 }
 
 /* Subtitle */
 
 .premium-sub{
-    margin-top:4px;
+    margin-top:2px;
 
-    color:rgba(255,255,255,.82);
+    color:rgba(255,255,255,.78);
 
-    font-size:11px;
+    font-size:10px;
     font-weight:500;
+    line-height:1.2;
 
     text-align:center;
-
     white-space:nowrap;
 }
 
@@ -912,7 +912,7 @@ body::after{
     width:120px;
     height:40px;
 
-    margin:14px auto 0;
+    margin:8px auto 0;
 
     border:none;
     border-radius:20px;
@@ -943,7 +943,7 @@ body::after{
 
 .diamond-wrap{
     position:relative;
-    top:14px;
+    top:18px;
 }
 
 .diamond{
@@ -996,21 +996,21 @@ body::after{
     animation-delay:1.6s;
 }
 .s4{
-    top:12px;
-    right:20px;
+    top:10px;
+    left:20px;
     animation-delay:.4s;
 }
 
 .s5{
-    left:12px;
-    bottom:-4px;
-    animation-delay:1.2s;
+    top:32px;
+    right:-8px;
+    animation-delay:1.1s;
 }
 
 .s6{
-    top:-10px;
-    left:28px;
-    animation-delay:2s;
+    bottom:8px;
+    left:-10px;
+    animation-delay:1.8s;
 }
 
 /* Extra Small Star */
