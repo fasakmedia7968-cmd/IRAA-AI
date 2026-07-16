@@ -891,25 +891,21 @@ body::after{
 ========================= */
 
 .premium-header{
-
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
+    display:grid;
+    grid-template-columns:56px 1fr 56px;
+    align-items:center;
 }
 
 /* Left */
 
 .premium-title{
     display:flex;
-    align-items:center;
     justify-content:center;
-
+    align-items:center;
+    margin:0;
     width:100%;
-
-    gap:10px;
-
-    margin-top:2px;
 }
+
 .premium-sub{
     margin:4px auto 0;
 
@@ -926,15 +922,24 @@ body::after{
 }
 /* Crown */
 
+.crown-wrap{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 .crown{
-    font-size:34px;
+    font-size:36px;
     position:relative;
-    top:6px;
+    top:4px;
 
     filter:
-    drop-shadow(0 0 2px rgba(255,215,0,.30));
+        drop-shadow(0 0 4px rgba(255,215,0,.35))
+        drop-shadow(0 0 8px rgba(255,215,0,.20));
 }
 
+.diamond{
+     font-size:38px;
+}
 /* IRAA Premium */
 
 .premium-title h3{
@@ -944,7 +949,7 @@ body::after{
     position:relative;
     top:-2px;
 
-    font-size:20px;
+    font-size:18px;
     font-weight:700;
 
     color:#fff;
@@ -957,7 +962,10 @@ body::after{
 ========================= */
 
 .diamond-wrap{
-    top:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:8px;
 }
 
 .diamond{
