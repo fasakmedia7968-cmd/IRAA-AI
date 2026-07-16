@@ -785,14 +785,14 @@ body::after{
    IRAA PREMIUM CARD V2
 ==========================================*/
 
-.premium-card{
+.iraa-premium-card{
     width:100%;
     padding:0 16px;
     margin:16px 0;
     box-sizing:border-box;
 }
 
-.premium-glass{
+.iraa-premium-glass{
     position:relative;
     width:100%;
     height:82px;
@@ -828,7 +828,7 @@ body::after{
   Glass Reflection
 ==============================*/
 
-.premium-glass::before{
+.iraa-premium-glass::before{
 
     content:"";
 
@@ -855,7 +855,7 @@ body::after{
  Left
 ==============================*/
 
-.premium-left{
+.iraa-premium-left{
 
     width:58px;
     height:100%;
@@ -872,7 +872,7 @@ body::after{
  Center
 ==============================*/
 
-.premium-center{
+.iraa-premium-center{
 
     flex:1;
 
@@ -890,7 +890,7 @@ body::after{
  Right
 ==============================*/
 
-.premium-right{
+.iraa-premium-right{
 
     position:relative;
 
@@ -925,7 +925,7 @@ body::after{
   TITLE
 ==========================================*/
 
-.premium-center h2{
+.iraa-premium-center h2{
 
     margin:0;
 
@@ -944,7 +944,7 @@ body::after{
   SUB TITLE
 ==========================================*/
 
-.premium-center p{
+.iraa-premium-center p{
 
     margin:4px 0 7px;
 
@@ -962,7 +962,7 @@ body::after{
   UPGRADE BUTTON
 ==========================================*/
 
-.upgrade-btn{
+.iraa-upgrade-btn{
 
     width:100px;
     height:26px;
@@ -992,7 +992,7 @@ body::after{
 
 }
 
-.upgrade-btn:hover{
+.iraa-upgrade-btn:hover{
 
     transform:translateY(-1px);
 
@@ -1130,15 +1130,15 @@ body::after{
 
 @media (max-width:380px){
 
-    .premium-center h2{
+    .iraa-premium-center h2{
         font-size:16px;
     }
 
-    .premium-center p{
+    .iraa-premium-center p{
         font-size:10px;
     }
 
-    .upgrade-btn{
+    .iraa-upgrade-btn{
         width:90px;
         height:24px;
         font-size:11px;
