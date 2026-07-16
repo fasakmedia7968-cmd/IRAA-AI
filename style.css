@@ -858,27 +858,28 @@ body::after{
 
 .premium-content::after{
 
-    content:"";
+content:"";
 
-    position:absolute;
+position:absolute;
 
-    left:50%;
-    bottom:-26px;
+inset:0;
 
-    transform:translateX(-50%);
+background:
 
-    width:82%;
-    height:56px;
+radial-gradient(circle at 15% 20%,
+rgba(255,255,255,.12),
+transparent 35%),
 
-    border-radius:50%;
+radial-gradient(circle at 85% 85%,
+rgba(0,229,255,.08),
+transparent 40%),
 
-    background:rgba(255,255,255,.05);
+radial-gradient(circle at 50% 100%,
+rgba(138,43,226,.08),
+transparent 45%);
 
-    filter:blur(24px);
-
-    pointer-events:none;
+pointer-events:none;
 }
-
 /* =========================
    Header
 ========================= */
