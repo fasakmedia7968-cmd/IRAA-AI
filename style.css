@@ -602,11 +602,11 @@ body::after{
     height:210%;
 
     background:linear-gradient(
-        120deg,
-        rgba(255,255,255,.26),
-        rgba(255,255,255,.10),
-        transparent 48%
-    );
+    120deg,
+    rgba(255,255,255,.14),
+    rgba(255,255,255,.06),
+    transparent 48%
+);
 
     transform:rotate(-16deg);
 
