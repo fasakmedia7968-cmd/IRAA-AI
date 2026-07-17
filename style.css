@@ -689,9 +689,6 @@ body::after{
 }
 
 .iraa-upgrade-btn{
-    cursor:pointer;
-    position:relative;
-    z-index:5;
     width:94px;
     height:24px;
 
@@ -703,6 +700,9 @@ body::after{
 
     font-size:11px;
     font-weight:600;
+    cursor:pointer;
+    position:relative;
+    z-index:10;
 
     background:linear-gradient(
         90deg,
@@ -774,37 +774,37 @@ body::after{
 }
 
 .star1{
-    top:14px;
-    right:8px;
+    top:8px;
+    right:2px;
 }
 
 .star2{
-    top:10px;
-    right:36px;
+    top:4px;
+    right:42px;
     animation-delay:.4s;
 }
 
 .star3{
-    top:30px;
-    right:48px;
+    top:26px;
+    right:56px;
     animation-delay:.8s;
 }
 
 .star4{
-    top:50px;
-    right:10px;
+    top:56px;
+    right:4px;
     animation-delay:1.2s;
 }
 
 .star5{
-    top:60px;
-    right:34px;
+    top:66px;
+    right:42px;
     animation-delay:1.6s;
 }
 
 .star6{
     top:38px;
-    right:0;
+    right:-6px;
     animation-delay:2s;
 }
 
