@@ -278,15 +278,17 @@ body::after{
     display:flex;
     justify-content:center;
 
-    position:relative;
-    top:20px;
+    margin-top:20px;
+    margin-bottom:12px;
 
-    margin-bottom:20px;
+    position:relative;
 }
 
 .search-container{
-    width:315px;
+ width:calc(100% - 32px);
+    max-width:380px;
     height:40px;
+   margin:0 16px;
 
     display:flex;
     align-items:center;
