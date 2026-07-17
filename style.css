@@ -1322,3 +1322,98 @@ body::after{
     transform:scale(.96);
 
 }
+/*==========================================
+        IRAA AI TOOLS - PREMIUM POLISH
+==========================================*/
+
+/* Card Glow Animation */
+
+.tool-card{
+
+    transition:
+        transform .28s ease,
+        box-shadow .28s ease,
+        border-color .28s ease;
+
+}
+
+/* Premium Hover / Touch */
+
+.tool-card:active{
+
+    transform:scale(.96);
+
+    border-color:rgba(0,229,255,.35);
+
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.22),
+        0 0 18px rgba(138,43,226,.22),
+        0 0 16px rgba(0,229,255,.18);
+
+}
+
+/* Icon Glow */
+
+.tool-card .material-icons{
+
+    transition:.28s ease;
+
+}
+
+.tool-card:active .material-icons{
+
+    transform:scale(1.08);
+
+    text-shadow:
+        0 0 12px rgba(138,43,226,.55),
+        0 0 18px rgba(0,229,255,.35);
+
+}
+
+/* Card Title */
+
+.tool-card small{
+
+    margin-top:4px;
+
+    letter-spacing:.2px;
+
+}
+
+/* Slider Bottom Space */
+
+.tools-slider{
+
+    padding-bottom:6px;
+
+}
+
+/* Mobile Fine Tuning */
+
+@media (max-width:380px){
+
+    .tools-page{
+
+        gap:10px;
+
+    }
+
+    .tool-card{
+
+        height:88px;
+
+    }
+
+    .tool-card .material-icons{
+
+        font-size:28px;
+
+    }
+
+    .tool-card small{
+
+        font-size:10px;
+
+    }
+
+}
