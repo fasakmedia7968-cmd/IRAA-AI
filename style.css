@@ -279,13 +279,10 @@ body::after{
 .search-section{
     display:flex;
     justify-content:center;
-
-.search-section{
     margin-top:28px;
     margin-bottom:18px;
-
-
     position:relative;
+
 }
 
 .search-container{
