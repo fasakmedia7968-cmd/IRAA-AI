@@ -781,39 +781,38 @@ body::after{
 
 }
 
-
 .star1{
     top:28px;
-    right:12px;
+    right:-6px;
 }
 
 .star2{
     top:22px;
-    right:58px;
+    right:36px;
     animation-delay:.4s;
 }
 
 .star3{
     top:48px;
-    right:70px;
+    right:48px;
     animation-delay:.8s;
 }
 
 .star4{
     top:72px;
-    right:14px;
+    right:-4px;
     animation-delay:1.2s;
 }
 
 .star5{
     top:78px;
-    right:58px;
+    right:36px;
     animation-delay:1.6s;
 }
 
 .star6{
     top:52px;
-    right:2px;
+    right:-12px;
     animation-delay:2s;
 }
 
