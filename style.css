@@ -280,7 +280,7 @@ body::after{
     display:flex;
     justify-content:center;
 
-    margin-top:20px;
+    margin-top:30px;
     margin-bottom:12px;
 
     position:relative;
@@ -558,7 +558,7 @@ body::after{
     position:relative;
 
     width:100%;
-    height:102px;
+    height:110px;
 
     display:flex;
     align-items:center;
@@ -727,7 +727,9 @@ body::after{
         drop-shadow(0 0 4px rgba(255,215,0,.35))
         drop-shadow(0 0 8px rgba(255,180,0,.20));
 
-    animation:crownFloat 4s ease-in-out infinite;
+    
+    animation:none;
+    
 
 }
 
@@ -746,7 +748,9 @@ body::after{
         drop-shadow(0 0 5px rgba(0,220,255,.35))
         drop-shadow(0 0 10px rgba(0,180,255,.20));
 
-    animation:diamondFloat 4s ease-in-out infinite;
+    
+    animation:none;
+    
 
     z-index:2;
 
