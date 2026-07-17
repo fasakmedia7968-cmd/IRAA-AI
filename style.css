@@ -1417,3 +1417,106 @@ body::after{
     }
 
 }
+/*==========================================
+        IRAA AI TOOLS - FINAL POLISH
+==========================================*/
+
+/* Section spacing */
+
+.ai-tools-section{
+    position:relative;
+    margin-top:22px;
+    margin-bottom:95px;
+}
+
+/* Premium Header */
+
+.tools-header{
+    padding:0 2px 4px;
+}
+
+/* Active / Inactive Arrow */
+
+.tool-arrow{
+    opacity:1;
+}
+
+.tool-arrow.hide{
+    opacity:.25;
+    pointer-events:none;
+    box-shadow:none;
+}
+
+/* View All */
+
+.view-all{
+    padding:4px 0;
+    border-radius:8px;
+}
+
+.view-all:active{
+    opacity:.75;
+}
+
+/* Card polish */
+
+.tool-card{
+
+    border:1px solid rgba(255,255,255,.14);
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(255,255,255,.14),
+            rgba(255,255,255,.05)
+        );
+
+}
+
+/* Premium reflection */
+
+.tool-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:10px;
+    left:10px;
+    right:10px;
+
+    height:1px;
+
+    background:rgba(255,255,255,.10);
+
+    border-radius:20px;
+
+}
+
+/* Icon */
+
+.tool-card .material-icons{
+
+    filter:
+        drop-shadow(0 0 6px rgba(138,43,226,.35))
+        drop-shadow(0 0 8px rgba(0,229,255,.18));
+
+}
+
+/* Text */
+
+.tool-card small{
+
+    color:#F5F7FF;
+
+}
+
+/* Smooth animation */
+
+.tool-card,
+.tool-arrow,
+.view-all{
+
+    transition:all .28s ease;
+
+}
