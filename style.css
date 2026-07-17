@@ -601,10 +601,10 @@ body::after{
     width:70%;
     height:210%;
 
-    background:linear-gradient(
+   background:linear-gradient(
     120deg,
-    rgba(255,255,255,.14),
-    rgba(255,255,255,.06),
+    rgba(255,255,255,.30),
+    rgba(255,255,255,.12),
     transparent 48%
 );
 
