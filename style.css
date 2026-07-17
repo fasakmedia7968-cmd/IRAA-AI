@@ -933,3 +933,95 @@ body::after{
     }
 
 }
+/*==========================================
+        IRAA AI TOOLS - LAYOUT
+==========================================*/
+
+.ai-tools-section{
+    width:100%;
+    padding:0 16px;
+    margin:24px 0 100px;
+    box-sizing:border-box;
+}
+
+/* Header */
+
+.tools-header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-bottom:16px;
+}
+
+.tools-header h3{
+    font-size:18px;
+    font-weight:700;
+    color:#fff;
+}
+
+.tools-navigation{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.page-indicator{
+    font-size:13px;
+    color:rgba(255,255,255,.75);
+    font-weight:600;
+}
+
+.tool-arrow{
+    width:28px;
+    height:28px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:none;
+    outline:none;
+    cursor:pointer;
+
+    border-radius:50%;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.12);
+}
+
+.tool-arrow .material-icons{
+    font-size:18px;
+}
+
+.tool-arrow.left{
+    visibility:hidden;
+}
+
+.view-all{
+    border:none;
+    background:none;
+
+    color:#8EEBFF;
+
+    font-size:13px;
+    font-weight:600;
+
+    cursor:pointer;
+}
+
+/* Slider */
+
+.tools-slider{
+    width:100%;
+    overflow:hidden;
+}
+
+.tools-page{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:12px;
+}
