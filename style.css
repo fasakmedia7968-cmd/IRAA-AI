@@ -657,6 +657,7 @@ body::after{
 
     text-align:center;
 
+    transform:translateX(-6px);
 }
 
 .iraa-premium-center h2{
@@ -755,6 +756,7 @@ body::after{
     
 
     z-index:2;
+   transform:translateX(-6px);
 
 }
 
