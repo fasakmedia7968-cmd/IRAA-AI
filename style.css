@@ -766,51 +766,52 @@ body::after{
 .star{
 
     position:absolute;
-   color:#8EEBFF;
+    color:#8EEBFF;
     font-size:7px;
 
     opacity:.9;
-   text-shadow:
+
+    text-shadow:
         0 0 6px rgba(0,229,255,.9),
         0 0 12px rgba(138,43,226,.5);
 
     animation:starTwinkle 2.8s ease-in-out infinite;
 
     z-index:3;
-
 }
 
+
 .star1{
-    top:8px;
+    top:28px;
     right:2px;
 }
 
 .star2{
-    top:4px;
+    top:22px;
     right:42px;
     animation-delay:.4s;
 }
 
 .star3{
-    top:26px;
+    top:48px;
     right:56px;
     animation-delay:.8s;
 }
 
 .star4{
-    top:56px;
+    top:72px;
     right:4px;
     animation-delay:1.2s;
 }
 
 .star5{
-    top:66px;
+    top:78px;
     right:42px;
     animation-delay:1.6s;
 }
 
 .star6{
-    top:38px;
+    top:52px;
     right:-6px;
     animation-delay:2s;
 }
