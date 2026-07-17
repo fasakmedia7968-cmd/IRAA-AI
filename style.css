@@ -220,7 +220,9 @@ body::after{
 .action-btn:hover{
     transform:translateY(-1px);
 }
-
+.action-btn:active{
+    transform:scale(.96);
+}
 /* Icons */
 
 .action-btn .material-icons{
@@ -452,6 +454,13 @@ body::after{
     color:#ffffff;
     font-size:12px;
     gap:4px;
+
+    cursor:pointer;
+    transition:.25s;
+}
+
+.nav-item:active{
+    transform:scale(.94);
 }
 
 .nav-item .material-icons{
@@ -500,7 +509,8 @@ body::after{
 .creator-item{
     width:70px;
     height:70px;
-
+   cursor:pointer;
+    transition:.25s ease;
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -529,6 +539,9 @@ body::after{
     font-size:11px;
 }
 
+.creator-item:active{
+    transform:scale(.95);
+}
 /*==========================================
         IRAA PREMIUM CARD V3
 ==========================================*/
