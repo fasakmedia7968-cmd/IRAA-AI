@@ -712,6 +712,10 @@ body::after{
     box-shadow:
         0 0 8px rgba(123,92,255,.30),
         0 0 12px rgba(46,185,255,.18);
+   
+   .iraa-upgrade-btn:active{
+    transform:scale(.96);
+   }
 
 }/*==========================================
         CROWN
@@ -869,7 +873,7 @@ body::after{
 
 .crown,
 .diamond{
-    font-size:42px;
+    font-size:46px;
     }
 
     .iraa-premium-center h2{
