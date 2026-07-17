@@ -588,6 +588,7 @@ body::after{
 
 }
 
+
 .iraa-premium-glass::before{
 
     content:"";
@@ -613,6 +614,7 @@ body::after{
 
 }
 
+
 .iraa-premium-glass::after{
 
     content:"";
@@ -628,6 +630,9 @@ body::after{
     background:rgba(255,255,255,.10);
 
 }
+
+
+/* LEFT / RIGHT */
 
 .iraa-premium-left,
 .iraa-premium-right{
@@ -645,6 +650,9 @@ body::after{
 
 }
 
+
+/* CENTER CONTENT */
+
 .iraa-premium-center{
 
     flex:1;
@@ -657,8 +665,10 @@ body::after{
 
     text-align:center;
 
-    transform:translateX(-6px);
 }
+
+
+/* TITLE */
 
 .iraa-premium-center h2{
 
@@ -675,6 +685,9 @@ body::after{
 
 }
 
+
+/* SUB TITLE */
+
 .iraa-premium-center p{
 
     margin:5px 0 8px;
@@ -687,7 +700,11 @@ body::after{
 
 }
 
+
+/* UPGRADE BUTTON */
+
 .iraa-upgrade-btn{
+
     width:94px;
     height:24px;
 
@@ -699,9 +716,12 @@ body::after{
 
     font-size:11px;
     font-weight:600;
+
     cursor:pointer;
+
     position:relative;
     z-index:10;
+
 
     background:linear-gradient(
         90deg,
@@ -709,32 +729,41 @@ body::after{
         #2EB9FF
     );
 
+
     box-shadow:
+
         0 0 8px rgba(123,92,255,.30),
         0 0 12px rgba(46,185,255,.18);
-   
-   }
+
+}
+
+
 .iraa-upgrade-btn:active{
+
     transform:scale(.96);
-   
-}/*==========================================
+
+}
+
+
+/*==========================================
         CROWN
 ==========================================*/
 
 .crown{
 
     font-size:46px;
+
     line-height:1;
 
+
     filter:
+
         drop-shadow(0 0 4px rgba(255,215,0,.35))
         drop-shadow(0 0 8px rgba(255,180,0,.20));
 
-    
-    animation:none;
-    
 
 }
+
 
 /*==========================================
         DIAMOND
@@ -745,20 +774,22 @@ body::after{
     position:relative;
 
     font-size:46px;
+
     line-height:1;
 
+    transform:translateX(-6px);
+
+
     filter:
+
         drop-shadow(0 0 5px rgba(0,220,255,.35))
         drop-shadow(0 0 10px rgba(0,180,255,.20));
 
-    
-    animation:none;
-    
 
     z-index:2;
-   transform:translateX(-6px);
 
 }
+
 
 /*==========================================
         SMALL STARS
@@ -767,21 +798,26 @@ body::after{
 .star{
 
     position:absolute;
+
     color:#8EEBFF;
+
     font-size:7px;
 
     opacity:.9;
 
+
     text-shadow:
+
         0 0 6px rgba(0,229,255,.9),
         0 0 12px rgba(138,43,226,.5);
+
 
     animation:starTwinkle 2.8s ease-in-out infinite;
 
     z-index:3;
-   transform:translateX(6px);
 
 }
+
 
 .star1{
     top:28px;
@@ -818,79 +854,76 @@ body::after{
     animation-delay:2s;
 }
 
+
 /*==========================================
-        ANIMATIONS
+        ANIMATION
 ==========================================*/
-
-@keyframes crownFloat{
-
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-3px);
-    }
-
-}
-
-@keyframes diamondFloat{
-
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-4px);
-    }
-
-}
 
 @keyframes starTwinkle{
 
     0%,100%{
 
         opacity:.35;
+
         transform:scale(.8);
 
     }
 
+
     50%{
 
         opacity:1;
+
         transform:scale(1.15);
 
     }
 
 }
 
+
 /*==========================================
         RESPONSIVE
 ==========================================*/
 
-@media (max-width:380px){
+@media(max-width:380px){
 
     .iraa-premium-glass{
+
         height:118px;
+
     }
 
-.crown,
-.diamond{
-    font-size:46px;
+
+    .crown,
+    .diamond{
+
+        font-size:46px;
+
     }
+
 
     .iraa-premium-center h2{
+
         font-size:16px;
+
     }
+
 
     .iraa-premium-center p{
+
         font-size:10px;
+
     }
 
+
     .iraa-upgrade-btn{
+
         width:88px;
+
         height:23px;
+
         font-size:10px;
+
     }
 
 }
