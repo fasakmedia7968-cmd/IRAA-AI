@@ -651,6 +651,14 @@ body::after{
 }
 
 
+/* Crown Only Move Left */
+
+.iraa-premium-left{
+
+    transform:translateX(-6px);
+
+}
+
 /* CENTER CONTENT */
 
 .iraa-premium-center{
@@ -664,6 +672,7 @@ body::after{
     justify-content:center;
 
     text-align:center;
+   transform:translateX(-6px);
 
 }
 
