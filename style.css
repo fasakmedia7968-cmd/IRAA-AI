@@ -672,10 +672,10 @@ body::after{
     justify-content:center;
 
     text-align:center;
-   transform:translateX(-6px);
+
+    transform:translateX(-8px);
 
 }
-
 
 /* TITLE */
 
@@ -761,18 +761,15 @@ body::after{
 .crown{
 
     font-size:46px;
-
     line-height:1;
 
+    transform:translateX(-8px);
 
     filter:
-
         drop-shadow(0 0 4px rgba(255,215,0,.35))
         drop-shadow(0 0 8px rgba(255,180,0,.20));
 
-
 }
-
 
 /*==========================================
         DIAMOND
