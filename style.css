@@ -1142,3 +1142,63 @@ body::after{
         0 0 12px rgba(0,229,255,.16);
 
 }
+/*==========================================
+        IRAA AI TOOLS - SLIDER
+==========================================*/
+
+.tools-slider{
+    position:relative;
+    width:100%;
+    overflow:hidden;
+}
+
+.tools-page{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,92px);
+
+    gap:12px;
+
+    width:100%;
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateX(30px);
+
+    transition:
+        opacity .35s ease,
+        transform .35s ease,
+        visibility .35s;
+}
+
+.tools-page.active{
+
+    opacity:1;
+    visibility:visible;
+
+    transform:translateX(0);
+
+}
+
+.tool-arrow{
+
+    transition:
+        opacity .25s ease,
+        transform .25s ease;
+
+}
+
+.tool-arrow:active{
+
+    transform:scale(.92);
+
+}
+
+.tool-arrow.hide{
+
+    opacity:0;
+    pointer-events:none;
+
+}
