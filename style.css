@@ -1202,3 +1202,123 @@ body::after{
     pointer-events:none;
 
 }
+/*==========================================
+        IRAA AI TOOLS - HEADER POLISH
+==========================================*/
+
+.tools-header{
+
+    position:relative;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    margin-bottom:18px;
+
+}
+
+.tools-header h3{
+
+    font-size:18px;
+    font-weight:700;
+    color:#fff;
+
+    letter-spacing:.3px;
+
+}
+
+/* Navigation */
+
+.tools-navigation{
+
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+}
+
+/* Left / Right Arrow */
+
+.tool-arrow{
+
+    width:30px;
+    height:30px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border:none;
+    cursor:pointer;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(16px);
+    -webkit-backdrop-filter:blur(16px);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255,255,255,.18),
+        0 0 8px rgba(138,43,226,.12),
+        0 0 8px rgba(0,229,255,.08);
+
+    color:#fff;
+
+    transition:.25s ease;
+
+}
+
+.tool-arrow .material-icons{
+
+    font-size:18px;
+
+}
+
+.tool-arrow:active{
+
+    transform:scale(.94);
+
+}
+
+/* Page Indicator */
+
+.page-indicator{
+
+    font-size:13px;
+    font-weight:700;
+
+    color:rgba(255,255,255,.75);
+
+    letter-spacing:1px;
+
+}
+
+/* View All */
+
+.view-all{
+
+    border:none;
+    outline:none;
+
+    background:none;
+
+    color:#8EEBFF;
+
+    font-size:13px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s ease;
+
+}
+
+.view-all:active{
+
+    transform:scale(.96);
+
+}
