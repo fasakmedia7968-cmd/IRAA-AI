@@ -37,6 +37,11 @@ body{
     overscroll-behavior:none;
 }
 
+#app{
+    min-height:100dvh;
+    padding-bottom:90px;
+}
+
 /* Background Glow */
 
 body::before{
