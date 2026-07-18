@@ -1499,6 +1499,6 @@ body::after{
 .tool-arrow,
 .view-all{
 
-    transition:all .28s ease;
+    transition:.28s ease;
 
 }
