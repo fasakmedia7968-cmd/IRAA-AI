@@ -1046,9 +1046,7 @@ body::after{
 .tool-card .material-icons{
 
     font-size:30px;
-
     color:#fff;
-
     margin-bottom:8px;
 
     filter:
@@ -1056,6 +1054,7 @@ body::after{
         drop-shadow(0 0 8px rgba(0,229,255,.20));
 
     transition:.28s ease;
+    will-change:transform;
 
 }
 
@@ -1133,15 +1132,7 @@ body::after{
         0 0 18px rgba(138,43,226,.16),
         0 0 14px rgba(0,229,255,.12);
 
-}
-
-/* Premium Icon */
-
-.tool-card .material-icons{
-
-    will-change:transform;
-
-}
+} 
 
 /* Header Title */
 
@@ -1165,15 +1156,7 @@ body::after{
 
     color:#ffffff;
 
-}
-
-/* Indicator */
-
-.page-indicator{
-
-    user-select:none;
-
-}
+} 
 
 /* Responsive */
 
