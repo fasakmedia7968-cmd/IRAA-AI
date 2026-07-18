@@ -168,18 +168,18 @@ body::after{
     left:0;
 
     width:100%;
-    height:46%;
+    height:70%;
 
     background:linear-gradient(
         180deg,
-        rgba(255,255,255,.22),
-        rgba(255,255,255,.08),
+        rgba(255,255,255,.35),
+        rgba(255,255,255,.12),
         transparent
     );
 
     pointer-events:none;
-   z-index:0;
-} 
+    z-index:0;
+}
 .top-bar > *{
     position:relative;
     z-index:1;
