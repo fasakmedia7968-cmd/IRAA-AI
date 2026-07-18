@@ -25,6 +25,7 @@
 
 html{
     scroll-behavior:smooth;
+    overscroll-behavior:none;
 }
 
 body{
@@ -33,6 +34,7 @@ body{
     font-family:'Outfit',sans-serif;
     min-height:100vh;
     overflow-x:hidden;
+    overscroll-behavior:none;
 }
 
 /* Background Glow */
