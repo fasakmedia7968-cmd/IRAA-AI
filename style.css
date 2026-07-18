@@ -28,6 +28,7 @@ html{
     overscroll-behavior:none;
 }
 body{
+    padding-bottom:80px;
     background:var(--bg);
     color:var(--text);
     font-family:'Outfit',sans-serif;
@@ -38,6 +39,7 @@ body{
 
 #app{
     min-height:100dvh;
+    padding-bottom:80px;
 }
 
 /* Background Glow */
@@ -347,11 +349,13 @@ body::after{
 .glass-icon .material-icons{
     font-size:14px;
 }
+/* Search bar spacing fix */
+
 .search-assistant-icon{
-    width:15px;
-    height:15px;
-    object-fit:contain;
-}
+    width:18px;
+    height:18px;
+    margin-right:6px;
+   
 /* Search Input */
 
 .search-input{
@@ -410,6 +414,10 @@ body::after{
         0 0 10px rgba(138,43,226,.20),
         0 0 10px rgba(0,229,255,.15);
    }
+
+   .brand{
+transform:translateX(-4px);
+}
 
 /*==========================================
         IRAA PREMIUM CARD V3
@@ -485,9 +493,6 @@ body::after{
 
 } 
 
-.iraa-premium-glass::after{
-    display:none;
-}
 
 /* LEFT / RIGHT */
 
