@@ -912,7 +912,6 @@ transform:translateX(-4px);
     width:100%;
     min-height:285px;
     overflow:hidden;
-    padding-top:8px;
     margin-bottom:8px;
 }
 
@@ -928,7 +927,7 @@ transform:translateX(-4px);
     gap:12px;
 
     width:100%;
-     padding-top:10px;
+   padding-top:12px;
     opacity:0;
     visibility:hidden;
     transform:translateX(30px);
