@@ -1014,8 +1014,9 @@ transform:translateX(-4px);
 
    background:linear-gradient(
     180deg,
-    rgba(255,255,255,.18),
-    rgba(255,255,255,.06)
+    rgba(255,255,255,.35),
+    rgba(255,255,255,.12),
+    transparent
 );
 
     pointer-events:none;
