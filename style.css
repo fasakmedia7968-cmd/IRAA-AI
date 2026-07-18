@@ -932,8 +932,8 @@ body::after{
         rgba(255,255,255,.05)
     );
 
-    backdrop-filter:blur(22px);
-    -webkit-backdrop-filter:blur(22px);
+    backdrop-filter:blur(12px);
+-webkit-backdrop-filter:blur(12px);
 
     border:1px solid rgba(255,255,255,.12);
 
@@ -1008,18 +1008,6 @@ body::after{
 
 }
 
-/* Hover (future web support) */
-
-.tool-card:hover{
-
-    transform:translateY(-2px);
-
-    box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.20),
-        0 0 16px rgba(138,43,226,.22),
-        0 0 12px rgba(0,229,255,.16);
-
-}
 /*==========================================
         IRAA AI TOOLS - SLIDER
 ==========================================*/
