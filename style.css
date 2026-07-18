@@ -1033,7 +1033,7 @@ body::after{
 .tool-card{
     position:relative;
 
-    height:92px;
+    height:84px;
 
     display:flex;
     flex-direction:column;
@@ -1152,14 +1152,14 @@ body::after{
 .tools-page{
     display:grid;
 
-    grid-template-columns:repeat(3, minmax(0, 1fr));
+    grid-template-columns:repeat(3, 1fr);
     grid-template-rows:repeat(3,92px);
 
     gap:16px;
 
     padding-top:25px;
-    padding-left:6px;
-    padding-right:6px;
+    padding-left:18px;
+    padding-right:18px;
 
     width:100%;
 
