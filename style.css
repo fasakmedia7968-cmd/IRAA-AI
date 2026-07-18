@@ -139,24 +139,25 @@ body::after{
     justify-content:space-between;
 
     width:100%;
-    height:54px;
+    height:56px;
 
-    padding:0 10px;
+    padding:0 12px;
     margin:0;
 
-    background:rgba(255,255,255,.08);
+    overflow:hidden;
+
+    background:rgba(18,18,22,.35);
+
     border-bottom:1px solid rgba(255,255,255,.10);
 
-    backdrop-filter:blur(20px);
-    -webkit-backdrop-filter:blur(20px);
+    backdrop-filter:blur(32px) saturate(180%);
+    -webkit-backdrop-filter:blur(32px) saturate(180%);
 
     box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.30),
-        inset 0 -1px 1px rgba(255,255,255,.05),
-        0 4px 14px rgba(138,43,226,.12),
-        0 2px 10px rgba(0,229,255,.08);
-
-    overflow:hidden;
+        inset 0 1px 0 rgba(255,255,255,.18),
+        inset 0 -1px 0 rgba(255,255,255,.05),
+        0 0 22px rgba(138,43,226,.16),
+        0 0 18px rgba(0,229,255,.12);
 }
 
 /* Inner Light Reflection */
