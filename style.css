@@ -25,7 +25,9 @@
 
 html{
     scroll-behavior:smooth;
-    overscroll-behavior:none;
+    overscroll-behavior:none; 
+    background:#050505;
+    min-height:100%;
 }
 body{
     padding-bottom:80px;
@@ -803,7 +805,7 @@ transform:translateX(-4px);
     position:relative;
     width:100%;
     padding:0 16px;
-    margin:52px 0 90px;
+    margin:14px 0 90px;
     box-sizing:border-box;
 }
 
@@ -813,7 +815,7 @@ transform:translateX(-4px);
     display:flex;
     align-items:center;
     justify-content:space-between;
-    margin-bottom:18px;
+    margin-bottom:12px;
     padding-top:8px;
 }
 
