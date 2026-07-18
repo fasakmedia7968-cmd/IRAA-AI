@@ -1152,16 +1152,16 @@ body::after{
 .tools-page{
     display:grid;
 
-    grid-template-columns:repeat(3, minmax(90px, 1fr));
+    grid-template-columns:repeat(3, 1fr);
     grid-template-rows:repeat(3,92px);
 
-    gap:16px;
+    gap:20px;
 
     padding-top:25px;
     padding-left:18px;
     padding-right:18px;
 
-    width:92%;
+    width:95%;
    margin:0 auto;
 
     opacity:0;
