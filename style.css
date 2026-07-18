@@ -805,7 +805,7 @@ transform:translateX(-4px);
     position:relative;
     width:100%;
     padding:0 16px;
-    margin:14px 0 90px;
+    margin:24px 0 10px;
     box-sizing:border-box;
 }
 
@@ -910,8 +910,9 @@ transform:translateX(-4px);
 .tools-slider{
     position:relative;
     width:100%;
-    min-height:300px;
+    min-height:310px;
     overflow:visible;
+    padding-bottom:12px;
 }
 
 /* Page */
