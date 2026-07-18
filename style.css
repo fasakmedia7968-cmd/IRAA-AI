@@ -824,6 +824,7 @@ body::after{
     align-items:center;
     justify-content:space-between;
     margin-bottom:18px;
+    padding-top:8px;
 }
 
 .tools-header h3{
@@ -918,7 +919,7 @@ body::after{
     position:relative;
     width:100%;
     min-height:300px;
-    overflow:hidden;
+    overflow:visible;
 }
 
 /* Page */
