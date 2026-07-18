@@ -178,8 +178,12 @@ body::after{
     );
 
     pointer-events:none;
+   z-index:0;
 } 
-
+.top-bar > *{
+    position:relative;
+    z-index:1;
+}
 .top-actions{
     display:flex;
     align-items:center;
