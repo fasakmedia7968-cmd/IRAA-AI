@@ -40,6 +40,7 @@ body{
 
 #app{
     min-height:100dvh;
+   padding-top:54px;
 }
 
 /* Background Glow */
@@ -129,10 +130,13 @@ body::after{
 ========================= */
 
 .top-bar{
-    position:sticky;
+    position:fixed;
     top:0;
     left:0;
-    z-index:1000;
+    right:0;
+
+    z-index:9999;
+}
 
     display:flex;
     align-items:center;
@@ -861,9 +865,7 @@ body::after{
 
     position:relative;
 
-    width:100%;
-
-    min-height:318px;
+    width:100%; 
 
     overflow:hidden;
 
