@@ -822,13 +822,108 @@ body::after{
 
 }
 /*==========================================
-        IRAA AI TOOLS - LAYOUT
+        IRAA AI TOOLS - FINAL SECTION
 ==========================================*/
 
 .ai-tools-section{
+
+    position:relative;
+
+    width:100%;
+
+    padding:0 16px;
+
+    margin-top:24px;
+
+    margin-bottom:18px;
+
+    box-sizing:border-box;
+
+}
+
+/* Header */
+
+.tools-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:18px;
+
+}
+
+/* Slider */
+
+.tools-slider{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:318px;
+
+    overflow:hidden;
+
+}
+
+/* Pages */
+
+.tools-page{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    grid-template-rows:repeat(3,92px);
+
+    gap:12px;
+
+    width:100%;
+
+    padding:0;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateX(24px);
+
+    transition:
+        opacity .35s ease,
+        transform .35s ease,
+        visibility .35s;
+
+}
+
+.tools-page.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateX(0);
+
+}
+
+/* Hidden Future Page */
+
+.hidden-page{
+
+    display:none;
+
+}
+/*==========================================
+        IRAA AI TOOLS
+==========================================*/
+
+.ai-tools-section{
+    position:relative;
     width:100%;
     padding:0 16px;
-    margin:24px 0 100px;
+    margin:24px 0 18px;
     box-sizing:border-box;
 }
 
@@ -838,14 +933,17 @@ body::after{
     display:flex;
     align-items:center;
     justify-content:space-between;
-    margin-bottom:16px;
+    margin-bottom:18px;
 }
 
 .tools-header h3{
     font-size:18px;
     font-weight:700;
     color:#fff;
+    letter-spacing:.3px;
 }
+
+/* Navigation */
 
 .tools-navigation{
     display:flex;
@@ -853,15 +951,11 @@ body::after{
     gap:8px;
 }
 
-.page-indicator{
-    font-size:13px;
-    color:rgba(255,255,255,.75);
-    font-weight:600;
-}
+/* Arrow */
 
 .tool-arrow{
-    width:28px;
-    height:28px;
+    width:30px;
+    height:30px;
 
     display:flex;
     align-items:center;
@@ -876,84 +970,143 @@ body::after{
     color:#fff;
 
     background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.12);
+
+    border:1px solid rgba(255,255,255,.14);
+
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+        inset 0 1px 1px rgba(255,255,255,.18),
+        0 0 8px rgba(138,43,226,.10),
+        0 0 8px rgba(0,229,255,.08);
+
+    transition:.28s ease;
 }
 
 .tool-arrow .material-icons{
     font-size:18px;
 }
 
-.tool-arrow.left{
-    visibility:hidden;
+.tool-arrow:active{
+    transform:scale(.94);
 }
+
+.tool-arrow.hide{
+    opacity:.25;
+    pointer-events:none;
+}
+
+/* Indicator */
+
+.page-indicator{
+    min-width:40px;
+    text-align:center;
+
+    font-size:13px;
+    font-weight:700;
+
+    color:rgba(255,255,255,.80);
+}
+
+/* View All */
 
 .view-all{
     border:none;
     background:none;
+    cursor:pointer;
 
     color:#8EEBFF;
 
     font-size:13px;
     font-weight:600;
-
-    cursor:pointer;
 }
 
 /* Slider */
 
 .tools-slider{
+    position:relative;
     width:100%;
+    min-height:300px;
     overflow:hidden;
 }
+
+/* Page */
 
 .tools-page{
     display:grid;
 
     grid-template-columns:repeat(3,1fr);
+    grid-template-rows:repeat(3,92px);
 
     gap:12px;
-  padding-top:25px;
+
+    width:100%;
+
+    opacity:0;
+    visibility:hidden;
+
+    transform:translateX(20px);
+
+    transition:.35s ease;
+}
+
+.tools-page.active{
+    opacity:1;
+    visibility:visible;
+    transform:translateX(0);
+}
+
+.hidden-page{
+    display:none;
 }
 /*==========================================
         IRAA AI TOOLS - PREMIUM CARDS
 ==========================================*/
 
 .tool-card{
-    position:relative;
 
-    height:88px;
+    position:relative;
 
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:center;
 
+    height:92px;
+
     overflow:hidden;
+
     cursor:pointer;
 
-    border-radius:20px;
+    border-radius:22px;
 
     background:linear-gradient(
-        135deg,
-        rgba(255,255,255,.12),
+        180deg,
+        rgba(255,255,255,.14),
         rgba(255,255,255,.05)
     );
 
-    backdrop-filter:blur(12px);
--webkit-backdrop-filter:blur(12px);
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
 
-    border:1px solid rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.14);
 
     box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.18),
-        inset 0 -1px 0 rgba(255,255,255,.04),
-        0 4px 14px rgba(138,43,226,.12),
-        0 4px 10px rgba(0,229,255,.08);
+        inset 0 1px 1px rgba(255,255,255,.20),
+        inset 0 -1px 1px rgba(255,255,255,.05),
+        0 6px 18px rgba(0,0,0,.22),
+        0 0 12px rgba(138,43,226,.10),
+        0 0 10px rgba(0,229,255,.08);
 
-    transition:.25s ease;
+    transition:
+        transform .28s ease,
+        box-shadow .28s ease,
+        border-color .28s ease;
+
 }
 
-/* Inner Reflection */
+/* Soft Inner Reflection */
 
 .tool-card::before{
 
@@ -961,15 +1114,49 @@ body::after{
 
     position:absolute;
 
-    top:0;
-    left:3%;
+    top:2px;
+    left:4%;
 
-    width:94%;
+    width:92%;
     height:42%;
 
     border-radius:18px;
 
-    background:transparent;
+    background:linear-gradient(
+        180deg,
+        rgba(255,255,255,.20),
+        rgba(255,255,255,.08),
+        transparent
+    );
+
+    pointer-events:none;
+
+}
+
+/* Soft Bottom Glow */
+
+.tool-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-18px;
+    left:50%;
+
+    width:72%;
+    height:30px;
+
+    transform:translateX(-50%);
+
+    background:radial-gradient(
+        circle,
+        rgba(138,43,226,.12),
+        rgba(0,229,255,.08),
+        transparent 70%
+    );
+
+    filter:blur(18px);
 
     pointer-events:none;
 
@@ -985,9 +1172,11 @@ body::after{
 
     margin-bottom:8px;
 
-    text-shadow:
-        0 0 10px rgba(138,43,226,.45),
-        0 0 10px rgba(0,229,255,.25);
+    filter:
+        drop-shadow(0 0 5px rgba(138,43,226,.35))
+        drop-shadow(0 0 8px rgba(0,229,255,.20));
+
+    transition:.28s ease;
 
 }
 
@@ -995,15 +1184,17 @@ body::after{
 
 .tool-card small{
 
-    color:#fff;
+    color:#F8F9FF;
 
     font-size:11px;
-
     font-weight:600;
 
     text-align:center;
 
+    letter-spacing:.25px;
+
     line-height:1.2;
+
 
 }
 
@@ -1013,228 +1204,12 @@ body::after{
 
     transform:scale(.96);
 
-}
-
-/*==========================================
-        IRAA AI TOOLS - SLIDER
-==========================================*/
-
-.tools-slider{
-    position:relative;
-    width:100%;
-    overflow:hidden;
-}
-
-.tools-page{
-    display:grid;
-
-    grid-template-columns:repeat(3, 1fr);
-    grid-template-rows:repeat(3,92px);
-
-    gap:14px;
-
-    padding-top:25px;
-    padding-left:8px;
-    padding-right:8px;
-
-    width:100%;
-    margin:0;
-
-    opacity:0;
-    visibility:hidden;
-
-    transform:translateX(30px);
-
-    transition:
-        opacity .35s ease,
-        transform .35s ease,
-        visibility .35s;
-}
-
-.tools-page.active{
-
-    opacity:1;
-    visibility:visible;
-
-    transform:translateX(0);
-
-}
-
-.tool-arrow{
-
-    transition:
-        opacity .25s ease,
-        transform .25s ease;
-
-}
-
-.tool-arrow:active{
-
-    transform:scale(.92);
-
-}
-
-.tool-arrow.hide{
-
-    opacity:0;
-    pointer-events:none;
-
-}
-/*==========================================
-        IRAA AI TOOLS - HEADER POLISH
-==========================================*/
-
-.tools-header{
-
-    position:relative;
-
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-
-    margin-bottom:18px;
-
-}
-
-.tools-header h3{
-
-    font-size:18px;
-    font-weight:700;
-    color:#fff;
-
-    letter-spacing:.3px;
-
-}
-
-/* Navigation */
-
-.tools-navigation{
-
-    display:flex;
-    align-items:center;
-    gap:8px;
-
-}
-
-/* Left / Right Arrow */
-
-.tool-arrow{
-
-    width:30px;
-    height:30px;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    border:none;
-    cursor:pointer;
-
-    border-radius:50%;
-
-    background:rgba(255,255,255,.08);
-
-    border:1px solid rgba(255,255,255,.12);
-
-    backdrop-filter:blur(16px);
-    -webkit-backdrop-filter:blur(16px);
-
-    box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.18),
-        0 0 8px rgba(138,43,226,.12),
-        0 0 8px rgba(0,229,255,.08);
-
-    color:#fff;
-
-    transition:.25s ease;
-
-}
-
-.tool-arrow .material-icons{
-
-    font-size:18px;
-
-}
-
-.tool-arrow:active{
-
-    transform:scale(.94);
-
-}
-
-/* Page Indicator */
-
-.page-indicator{
-
-    font-size:13px;
-    font-weight:700;
-
-    color:rgba(255,255,255,.75);
-
-    letter-spacing:1px;
-
-}
-
-/* View All */
-
-.view-all{
-
-    border:none;
-    outline:none;
-
-    background:none;
-
-    color:#8EEBFF;
-
-    font-size:13px;
-    font-weight:600;
-
-    cursor:pointer;
-
-    transition:.25s ease;
-
-}
-
-.view-all:active{
-
-    transform:scale(.96);
-
-}
-/*==========================================
-        IRAA AI TOOLS - PREMIUM POLISH
-==========================================*/
-
-/* Card Glow Animation */
-
-.tool-card{
-
-    transition:
-        transform .28s ease,
-        box-shadow .28s ease,
-        border-color .28s ease;
-
-}
-
-/* Premium Hover / Touch */
-
-.tool-card:active{
-
-    transform:scale(.96);
-
-    border-color:rgba(0,229,255,.35);
+    border-color:rgba(138,43,226,.28);
 
     box-shadow:
         inset 0 1px 2px rgba(255,255,255,.22),
-        0 0 18px rgba(138,43,226,.22),
-        0 0 16px rgba(0,229,255,.18);
-
-}
-
-/* Icon Glow */
-
-.tool-card .material-icons{
-
-    transition:.28s ease;
+        0 0 16px rgba(138,43,226,.18),
+        0 0 14px rgba(0,229,255,.14);
 
 }
 
@@ -1242,33 +1217,88 @@ body::after{
 
     transform:scale(1.08);
 
+}
+/*==========================================
+        IRAA AI TOOLS - FINAL POLISH
+==========================================*/
+
+/* Section Animation */
+
+.ai-tools-section{
+    animation:fadeUp .45s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(14px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* Card Hover */
+
+.tool-card:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.20),
+        0 10px 22px rgba(0,0,0,.24),
+        0 0 18px rgba(138,43,226,.16),
+        0 0 14px rgba(0,229,255,.12);
+
+}
+
+/* Premium Icon */
+
+.tool-card .material-icons{
+
+    will-change:transform;
+
+}
+
+/* Header Title */
+
+.tools-header h3{
+
     text-shadow:
-        0 0 12px rgba(138,43,226,.55),
-        0 0 18px rgba(0,229,255,.35);
+        0 0 6px rgba(138,43,226,.18),
+        0 0 6px rgba(0,229,255,.10);
 
 }
 
-/* Card Title */
+/* View All */
 
-.tool-card small{
+.view-all{
 
-    margin-top:4px;
-
-    letter-spacing:.2px;
+    transition:.25s ease;
 
 }
 
-/* Slider Bottom Space */
+.view-all:hover{
 
-.tools-slider{
-
-    padding-bottom:6px;
+    color:#ffffff;
 
 }
 
-/* Mobile Fine Tuning */
+/* Indicator */
 
-@media (max-width:380px){
+.page-indicator{
+
+    user-select:none;
+
+}
+
+/* Responsive */
+
+@media(max-width:380px){
 
     .tools-page{
 
@@ -1293,88 +1323,5 @@ body::after{
         font-size:10px;
 
     }
-
-}
-/*==========================================
-        IRAA AI TOOLS - FINAL POLISH
-==========================================*/
-
-/* Section spacing */
-
-.ai-tools-section{
-    position:relative;
-    margin-top:22px;
-    margin-bottom:95px;
-}
-
-/* Premium Header */
-
-.tools-header{
-    padding:0 2px 4px;
-}
-
-/* Active / Inactive Arrow */
-
-.tool-arrow{
-    opacity:1;
-}
-
-.tool-arrow.hide{
-    opacity:.25;
-    pointer-events:none;
-    box-shadow:none;
-}
-
-/* View All */
-
-.view-all{
-    padding:4px 0;
-    border-radius:8px;
-}
-
-.view-all:active{
-    opacity:.75;
-}
-
-/* Card polish */
-
-.tool-card{
-
-    border:1px solid rgba(255,255,255,.14);
-
-    background:
-        linear-gradient(
-            180deg,
-            rgba(255,255,255,.14),
-            rgba(255,255,255,.05)
-        );
-
-}
-
-/* Icon */
-
-.tool-card .material-icons{
-
-    filter:
-        drop-shadow(0 0 6px rgba(138,43,226,.35))
-        drop-shadow(0 0 8px rgba(0,229,255,.18));
-
-}
-
-/* Text */
-
-.tool-card small{
-
-    color:#F5F7FF;
-
-}
-
-/* Smooth animation */
-
-.tool-card,
-.tool-arrow,
-.view-all{
-
-    transition:.28s ease;
 
 }
