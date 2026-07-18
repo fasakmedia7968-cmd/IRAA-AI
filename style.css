@@ -911,7 +911,7 @@ transform:translateX(-4px);
     position:relative;
     width:100%;
     min-height:285px;
-    overflow:hidden;
+    overflow:visible;
     margin-bottom:8px;
 }
 
