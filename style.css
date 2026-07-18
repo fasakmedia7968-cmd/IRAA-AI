@@ -272,8 +272,8 @@ body::after{
 .search-section{
     display:flex;
     justify-content:center;
-    margin-top:28px;
-    margin-bottom:28px;
+    margin-top:18px;
+    margin-bottom:22px;
     position:relative;
 }
 
@@ -428,7 +428,7 @@ transform:translateX(-4px);
 .iraa-premium-card{
     width:100%;
     padding:0 16px;
-    margin:35px 0 14px;
+    margin:24px 0 10px;
     box-sizing:border-box;
 }
 
