@@ -1024,6 +1024,7 @@ body::after{
     grid-template-columns:repeat(3,1fr);
 
     gap:12px;
+  padding-top:25px;
 }
 /*==========================================
         IRAA AI TOOLS - PREMIUM CARDS
