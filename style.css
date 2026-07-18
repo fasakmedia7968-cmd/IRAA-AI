@@ -69,7 +69,7 @@ body::after{
 
     filter:blur(90px);
 
-    animation:bgFloat 12s ease-in-out infinite;
+    animation:none;
 
     z-index:-3;
 }
@@ -1033,7 +1033,7 @@ body::after{
 .tool-card{
     position:relative;
 
-    height:84px;
+    height:88px;
 
     display:flex;
     flex-direction:column;
