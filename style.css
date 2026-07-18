@@ -29,6 +29,7 @@ html{
 }
 
 body{
+   position:relative;
     background:var(--bg);
     color:var(--text);
     font-family:'Outfit',sans-serif;
